@@ -12,7 +12,7 @@ $black2: #999;
 
 .navigation {
 	position: fixed;
-	width: 10rem;
+	width: 20rem;
 	height: 100%;
 	background-color: $blue;
 	border-left: 1rem solid $blue;
@@ -30,7 +30,7 @@ $black2: #999;
 .navigation ul li {
 	position: relative;
 	width: 100%;
-	border-radius: 1rem;
+	border-radius: 1rem 0 0 1rem;
 }
 .navigation ul li:hover {
 	background-color: $white;
