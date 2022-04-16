@@ -2,10 +2,10 @@
   <div class="navigation">
     <nav class="nav">
       <ul class="list-unstyled">
-        <li class="nav-item">
+        <li class="nav-item" *ngFor="let item of items">
           <a class="nav-link active" href="#">
 						<span class="icon"></span>
-						<span class="title">name</span>
+						<span class="title"> {{item.title}} </span>
 					</a>
         </li>
       </ul>
