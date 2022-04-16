@@ -2,9 +2,9 @@
   <div class="navigation">
 		<ul class="list-unstyled">
 			<li class="nav-item" *ngFor="let item of items; let i = index">
-				<a class="nav-link text-white fs-4" href="#" [ngClass]="{'mb-3': i==0}">
-					<span class="icon" [class]="item.icon"  ></span>
-					<span class="title"> {{item.title}} </span>
+				<a class="nav-link text-white fs-4" href="#" [ngClass]="{'mb-5': i==0}">
+					<span class="icon fw-bold" [class]="item.icon"  ></span>
+					<span class="ps-3 title"> {{item.title}} </span>
 				</a>
 			</li>
 		</ul>
