@@ -1,14 +1,38 @@
 <div class="nav-container">
   <div class="navigation">
-		<ul class="list-unstyled">
-			<li class="nav-item" *ngFor="let item of items; let i = index">
-				<a class="nav-link text-white fs-4" href="#" [ngClass]="{'mb-5': i==0}">
-					<span class="icon fw-bold" [class]="item.icon"  ></span>
-					<span class="ps-3 title"> {{item.title}} </span>
-				</a>
-			</li>
-		</ul>
+    <ul class="list-unstyled">
+      <li class="nav-item" *ngFor="let item of items; let i = index">
+        <a class="nav-link text-white fs-4" href="#" [ngClass]="{'mb-5': i==0}">
+          <span class="icon" [class]="item.icon"></span>
+          <span class="ps-3 title"> {{item.title | titlecase}} </span>
+        </a>
+      </li>
+    </ul>
     <!-- <nav class="nav">
     </nav> -->
   </div>
 </div>
+
+<div class="main">
+  <div class="topbar">
+    <div class="toggle">
+      <i class="bi bi-list"></i>
+    </div>
+
+    <div class="input-group search">
+      <input
+        type="text"
+        name="search"
+        placeholder="search here"
+        class="form-control"
+        aria-label="search here"
+      />
+      <label for="search" class="bi bi-search input-group-text"></label>
+    </div>
+
+		<div class="user">
+			<img src="https://randomuser.me/api/portraits/women/6.jpg" alt="user img">
+		</div>
+  </div>
+</div>
+<!-- https://randomuser.me/api/portraits/women/6.jpg -->

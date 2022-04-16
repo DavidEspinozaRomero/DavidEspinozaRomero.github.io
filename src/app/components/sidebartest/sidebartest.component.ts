@@ -11,7 +11,7 @@ export class SidebartestComponent implements OnInit {
 		{icon:'bi bi-house', title:'dashboard'},
 		{icon:'bi bi-person', title:'customers'},
 		{icon:'bi bi-chat', title:'message'},
-		{icon:'bi bi-question', title:'help'},
+		{icon:'bi bi-question-lg', title:'help'},
 		{icon:'bi bi-gear', title:'settings'},
 		{icon:'bi bi-lock', title:'password'},
 		{icon:'bi bi-box-arrow-right', title:'sign out'},
