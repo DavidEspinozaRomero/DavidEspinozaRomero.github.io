@@ -10,10 +10,28 @@ $black2: #999;
 	width: 100%;
 }
 
-.navigation{
+.navigation {
 	position: fixed;
 	width: 10rem;
 	height: 100%;
 	background-color: $blue;
 	border-left: 1rem solid $blue;
+	transition: .5s;
+	overflow: hidden;
 }
+
+.navigation ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.navigation ul li {
+	position: relative;
+	width: 200%;
+}
+.navigation ul li:hover {
+	background-color: $white;
+}
+
