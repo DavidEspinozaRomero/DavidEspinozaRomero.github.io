@@ -19,6 +19,9 @@ $black2: #999;
 	transition: .5s;
 	overflow: hidden;
 }
+.navigation.side-colapse{
+	width: 6rem;
+}
 
 .navigation ul {
 	position: absolute;
@@ -78,4 +81,9 @@ $black2: #999;
 }
 .search {
 	height: 2rem;
+}
+
+.user{
+	width: 8rem;
+	height: 4rem;
 }
