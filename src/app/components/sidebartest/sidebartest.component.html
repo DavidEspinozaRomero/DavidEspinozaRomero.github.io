@@ -1,9 +1,9 @@
 <div class="nav-container">
   <div class="navigation">
 		<ul class="list-unstyled">
-			<li class="nav-item" *ngFor="let item of items">
+			<li class="nav-item" *ngFor="let item of items; let i = index">
 				<a class="nav-link text-white" href="#">
-					<span class="icon" [class]="item.icon"></span>
+					<span class="icon" [class]="item.icon" [ngClass]="{'mb-3': i==0}" ></span>
 					<span class="title"> {{item.title}} </span>
 				</a>
 			</li>
