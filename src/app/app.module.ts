@@ -10,7 +10,7 @@ import { Components } from './components/components.module';
   ],
   imports: [
     BrowserModule,
-    Components,
+    ComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

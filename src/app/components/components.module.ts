@@ -3,7 +3,8 @@ import { SidebartestComponent } from "./sidebartest/sidebartest.component";
 
 @NgModule({
   declarations: [SidebartestComponent],
+  exports: [SidebartestComponent],
   imports: [],
   providers: [],
 })
-export class Components {}
+export class ComponentsModule {}
