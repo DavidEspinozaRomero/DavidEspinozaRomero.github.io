@@ -75,6 +75,9 @@ $black2: #999;
 	transition: .5s;
 	background-color: red;
 }
+.main.side-colapse{
+	width: calc(100% - 6rem);
+}
 
 .topbar{
 	height: 5rem;

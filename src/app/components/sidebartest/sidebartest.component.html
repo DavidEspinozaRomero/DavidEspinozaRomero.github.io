@@ -1,10 +1,10 @@
 <div class="nav-container">
-  <div class="navigation" [ngClass]="{'side-colapse': sideToggle}" (click)="sideToggle = !sideToggle">
+  <div class="navigation" [ngClass]="{'side-colapse': sideToggle}">
     <ul class="list-unstyled">
       <li class="nav-item" *ngFor="let item of items; let i = index">
         <a class="nav-link text-white fs-4" href="#" [ngClass]="{'mb-5': i==0}">
           <span class="icon" [class]="item.icon"></span>
-          <span *ngIf="sideToggle" class="ps-3 title"> {{item.title | titlecase}} </span>
+          <span *ngIf="!sideToggle" class="ps-3 title"> {{item.title | titlecase}} </span>
         </a>
       </li>
     </ul>
