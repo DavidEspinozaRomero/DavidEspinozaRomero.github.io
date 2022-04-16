@@ -7,13 +7,13 @@ import { Component, OnInit } from "@angular/core";
 })
 export class SidebartestComponent implements OnInit {
   items = [
-		{icon:'', title:'dashboard'},
-		{icon:'', title:'customers'},
-		{icon:'', title:'message'},
-		{icon:'', title:'help'},
-		{icon:'', title:'settings'},
-		{icon:'', title:'password'},
-		{icon:'', title:'sign out'},
+		{icon:'bi bi-house', title:'dashboard'},
+		{icon:'bi bi-person', title:'customers'},
+		{icon:'bi bi-chat', title:'message'},
+		{icon:'bi bi-question', title:'help'},
+		{icon:'bi bi-gear', title:'settings'},
+		{icon:'bi bi-lock', title:'password'},
+		{icon:'bi bi-box-arrow-right', title:'sign out'},
 	];
   constructor() {}
 
