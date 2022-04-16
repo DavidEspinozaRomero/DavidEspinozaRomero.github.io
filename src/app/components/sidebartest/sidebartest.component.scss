@@ -20,7 +20,7 @@ $black2: #999;
 	overflow: hidden;
 }
 .navigation.side-colapse{
-	width: 6rem;
+	width: 5rem;
 }
 
 .navigation ul {
@@ -76,7 +76,8 @@ $black2: #999;
 	background-color: red;
 }
 .main.side-colapse{
-	width: calc(100% - 6rem);
+	width: calc(100% - 5rem);
+	left: 5rem;
 }
 
 .topbar{
