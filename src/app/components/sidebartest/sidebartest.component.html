@@ -2,23 +2,23 @@
   <div class="navigation" [ngClass]="{'side-colapse': sideToggle}">
     <ul class="list-unstyled">
       <li class="nav-item" *ngFor="let item of items; let i = index">
-        <a class="nav-link text-white fs-4" href="#" [ngClass]="{'mb-5 fs-3': i==0}">
+        <a
+          class="nav-link text-white fs-4"
+          href="#"
+          [ngClass]="{'mb-5 fs-3': i==0}"
+        >
           <span class="icon" [class]="item.icon"></span>
-          <span *ngIf="!sideToggle" class="ps-3 title">
+          <span class="ps-3 title">
             {{item.title | titlecase}}
           </span>
         </a>
       </li>
     </ul>
-    <!-- <nav class="nav">
-    </nav> -->
   </div>
 </div>
 
 <div class="main" [ngClass]="{'side-colapse': sideToggle}">
-  <div
-    class="topbar py-3 d-flex justify-content-between align-items-center"
-  >
+  <div class="topbar py-3 d-flex justify-content-between align-items-center">
     <div class="toggle p-3" (click)="sideToggle = !sideToggle">
       <i class="bi bi-list fs-3" role="button"></i>
     </div>
