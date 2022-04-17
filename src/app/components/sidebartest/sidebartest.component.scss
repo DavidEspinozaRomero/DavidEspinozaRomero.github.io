@@ -103,7 +103,9 @@ $black2: #999;
 .shadow-card{
 	box-shadow: 4px 4px 8px 0px $blue;
 }
-
+.card-sumary{
+	border-radius: 1rem;
+}
 .icon-card{
 	position: absolute;
 	top: 1rem;
