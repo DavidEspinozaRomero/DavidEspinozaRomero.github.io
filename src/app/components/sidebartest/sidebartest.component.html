@@ -62,9 +62,10 @@
   </div>
 	<div class="my-5"></div>
 	<div class="row mx-3">
-		<div class="col-8">
-			<div class="table-responsive shadow-card card-sumary">
-				<table class="table table-light table-striped table-hover" >
+		<div class="col-8 shadow-card card-sumary">
+			<h3 class="text-primary"> Recent Orders </h3>
+			<div class="table-responsive ">
+				<table class="table mb-0 table-light table-striped table-hover" >
 					<thead class="thead-light">
 						<tr >
 							<th *ngFor="let item of itemstable"> {{item.title}} </th>
@@ -73,12 +74,20 @@
 					<tbody>
 						<tr >
 							<td *ngFor="let item of itemstable"> {{item.description}} </td>
+							<td *ngFor="let item of itemstable"> {{item.description}} </td>
+							<td *ngFor="let item of itemstable"> {{item.description}} </td>
+							<td *ngFor="let item of itemstable"> {{item.description}} </td>
+							<td *ngFor="let item of itemstable"> {{item.description}} </td>
+							<td *ngFor="let item of itemstable"> {{item.description}} </td>
+							<td *ngFor="let item of itemstable"> {{item.description}} </td>
+							<td *ngFor="let item of itemstable"> {{item.description}} </td>
 						</tr>
 					</tbody>
 				</table>
 			</div>			
 		</div>
-		<div class="col">
+		<div class="col shadow-card card-sumary">
+			<h3 class="text-primary"> Recent Clients </h3>
 			
 		</div>
 	</div>
