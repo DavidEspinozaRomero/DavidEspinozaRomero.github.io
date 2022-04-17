@@ -6,9 +6,9 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./sidebartest.component.scss"],
 })
 export class SidebartestComponent implements OnInit {
-	sideToggle=false;
+	sideToggle=true;
   items = [
-		{icon:'bi bi-apple', title:'DEERHOU'},
+		{icon:'bi bi-apple', title:'deerhou'},
 		{icon:'bi bi-house', title:'dashboard'},
 		{icon:'bi bi-person', title:'customers'},
 		{icon:'bi bi-chat', title:'message'},

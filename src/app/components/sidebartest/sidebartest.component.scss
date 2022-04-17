@@ -19,7 +19,8 @@ $black2: #999;
 	transition: .3s;
 	overflow: hidden;
 }
-.navigation.side-colapse{
+
+.navigation.side-colapse {
 	width: 5rem;
 }
 
@@ -36,6 +37,7 @@ $black2: #999;
 	border-radius: 1rem 0 0 1rem;
 	text-shadow: 1px 1px 1px black;
 }
+
 .navigation ul li:hover {
 	background-color: $white;
 	text-shadow: initial;
@@ -67,11 +69,11 @@ $black2: #999;
 	box-shadow: 2rem -2rem 0px 10px $white;
 }
 
-.title{
-	position: relative;
+.title {
+	position: absolute;
 }
 
-.main{
+.main {
 	width: calc(100% - 20rem);
 	min-height: 100vh;
 	position: absolute;
@@ -79,19 +81,21 @@ $black2: #999;
 	transition: .3s;
 	background-color: red;
 }
-.main.side-colapse{
+
+.main.side-colapse {
 	width: calc(100% - 5rem);
 	left: 5rem;
 }
 
-.topbar{
+.topbar {
 	height: 5rem;
 }
+
 .search {
 	height: 2rem;
 }
 
-.user{
+.user {
 	width: 8rem;
 	height: 4rem;
 }
