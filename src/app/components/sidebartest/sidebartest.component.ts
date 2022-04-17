@@ -23,6 +23,13 @@ export class SidebartestComponent implements OnInit {
 		{icon:'bi bi-person', title:'coments', number:1111},
 		{icon:'bi bi-person', title:'earnings', number:11111},
 	];
+  itemstable = [
+		{ title:'name', description: ' david espinoza'},
+		{ title:'price', description: ' 100 '},
+		{ title:'payment', description: ' paid '},
+		{ title:'status', description: ' delivered '},
+	];
+
   constructor() {}
 
   ngOnInit(): void {}
