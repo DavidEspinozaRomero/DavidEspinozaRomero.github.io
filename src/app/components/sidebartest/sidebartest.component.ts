@@ -18,11 +18,12 @@ export class SidebartestComponent implements OnInit {
 		{icon:'bi bi-box-arrow-right', title:'sign out'},
 	];
   itemsmain = [
-		{icon:'bi bi-apple', title:'views', number:11},
-		{icon:'bi bi-house', title:'sales', number:111},
-		{icon:'bi bi-person', title:'coments', number:1111},
-		{icon:'bi bi-person', title:'earnings', number:11111},
+		{icon:'bi bi-eye', title:'views', number:11},
+		{icon:'bi bi-cart2', title:'sales', number:111},
+		{icon:'bi bi-chat-dots', title:'coments', number:1111},
+		{icon:'bi bi-cash', title:'earnings', number:11111},
 	];
+
   itemstable = [
 		{ title:'name', description: ' david espinoza'},
 		{ title:'price', description: ' 100 '},

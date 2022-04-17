@@ -48,7 +48,7 @@
     <div class="col" *ngFor="let item of itemsmain">
       <div class="card shadow-card card-sumary">
         <div class="card-body">
-          <span class="card-title text-primary">{{ item.number }}</span>
+          <p class="card-title fs-3 text-primary">{{ item.number }}</p>
           <small class="card-subtitle text-muted">{{ item.title | titlecase}}</small>
           <span class="fs-1 text-muted float-end icon-card" [class]="item.icon"></span>
         </div>
