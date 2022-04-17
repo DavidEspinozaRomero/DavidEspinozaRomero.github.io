@@ -17,6 +17,12 @@ export class SidebartestComponent implements OnInit {
 		{icon:'bi bi-lock', title:'password'},
 		{icon:'bi bi-box-arrow-right', title:'sign out'},
 	];
+  itemsmain = [
+		{icon:'bi bi-apple', title:'views', number:11},
+		{icon:'bi bi-house', title:'sales', number:111},
+		{icon:'bi bi-person', title:'coments', number:1111},
+		{icon:'bi bi-person', title:'earnings', number:11111},
+	];
   constructor() {}
 
   ngOnInit(): void {}
