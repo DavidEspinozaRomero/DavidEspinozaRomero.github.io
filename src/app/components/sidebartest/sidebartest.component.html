@@ -42,15 +42,15 @@
     </div>
   </div>
   <!-- #endregion top bar -->
-	<div class="my-3"></div>
-  <!-- #region  -->
-  <div class="row">
+	<div class="my-5"></div>
+  <!-- #region  sumary-->
+  <div class="row mx-3">
     <div class="col" *ngFor="let item of itemsmain">
       <div class="card shadow-card card-sumary">
         <div class="card-body">
-          <h4 class="card-title text-primary">{{ item.number }}</h4>
+          <span class="card-title text-primary">{{ item.number }}</span>
           <small class="card-subtitle text-muted">{{ item.title | titlecase}}</small>
-          <span class="fs-3 text-muted float-end icon-card" [class]="item.icon"></span>
+          <span class="fs-1 text-muted float-end icon-card" [class]="item.icon"></span>
         </div>
       </div>
       <!-- <div class="m-3 p-3 shadow-card">
@@ -61,6 +61,7 @@
     </div>
   </div>
 
-  <!-- #endregion -->
+
+  <!-- #endregion sumary-->
 </div>
 <!-- https://randomuser.me/api/portraits/women/6.jpg -->
