@@ -79,7 +79,7 @@ $black2: #999;
 	position: absolute;
 	left: 20rem;
 	transition: .3s;
-	background-color: red;
+	// background-color: red;
 }
 
 .main.side-colapse {
@@ -101,5 +101,7 @@ $black2: #999;
 }
 
 .shadow-card{
-	box-shadow: 0 0 darkblue;
+	box-shadow: 4px 4px 8px 0px $blue;
 }
+
+

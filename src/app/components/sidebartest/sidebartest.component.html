@@ -46,14 +46,14 @@
   <!-- #region  -->
   <div class="row">
     <div class="col" *ngFor="let item of itemsmain">
-			<div class="card shadow-card" style="width: 18rem;">
-				<div class="card-body">
-					<h5 class="card-title text-primary">{{item.number }}</h5>
-					<h6 class="card-subtitle text-muted">{{item.title | titlecase}}</h6>
-					<span class="float-right" [class]="item.icon"></span>
-				</div>
-			</div>
-			<!-- <div class="m-3 p-3 shadow-card">
+      <div class="card shadow-card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title text-primary">{{ item.number }}</h5>
+          <h6 class="card-subtitle text-muted">{{ item.title | titlecase}}</h6>
+          <span class="float-end" [class]="item.icon"></span>
+        </div>
+      </div>
+      <!-- <div class="m-3 p-3 shadow-card">
 				<span class="float-right" [class]="item.icon"></span>
 				<span class="text-primary"> {{item.number }} </span>
 				<span class="text-primary"> {{item.title | titlecase}} </span>
