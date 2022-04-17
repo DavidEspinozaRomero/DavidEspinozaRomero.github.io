@@ -8,7 +8,7 @@
           [ngClass]="{'mb-5 fs-3': i==0}"
         >
           <span class="icon" [class]="item.icon"></span>
-          <span class="ps-3 title">
+          <span *ngIf="!sideToggle" class="ps-3 title">
             {{item.title | titlecase}}
           </span>
         </a>
@@ -23,12 +23,12 @@
       <i class="bi bi-list fs-3" role="button"></i>
     </div>
 
-    <div class="input-group search">
+    <div class="input-group justify-content-center search">
       <input
         type="text"
         name="search"
         placeholder="search here"
-        class="form-control justify-content-center"
+        class="form-control "
         aria-label="search here"
         style="max-width: 40%;"
       />
