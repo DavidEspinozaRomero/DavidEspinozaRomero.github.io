@@ -36,8 +36,8 @@
     <div
       class="card-img-overlay bg-black opacity-75 d-flex justify-content-center align-items-center"
     >
-      <div class="row">
-        <div class="col text-center" *ngFor="let item of s3Items">
+      <div class="row mx-5">
+        <div class="col mx-5 text-center" *ngFor="let item of s3Items">
           <p
             class="fs-2 p-3 mx-auto bg-danger rounded"
             style="width: 3rem;
@@ -103,55 +103,17 @@
     </p>
   </div>
 
-  <div class="row row-col-2 mx-5">
-    <div class="col d-flex">
-      <i class="bi bi-gear fs-1 text-danger"></i>
-      <div class="p-3">
-        <h2>Best Ideas</h2>
+  <div class="row row-cols-2 mx-5">
+    <div class="col d-flex" *ngFor="let item of s6Items">
+      <i class="fs-1 text-danger" [class]="item.icon"></i>
+      <div class="p-3 me-5">
+        <h2> {{item.title}} </h2>
         <p>
-          Bring us your wildest ideas and with our creative mindset and tools
-          we’ll make it happen. Our team will provide you with a unique site
-          designed for your specific needs, and help you develop an online
-          business strategy to outplay your competitors
+          {{item.description}}
         </p>
       </div>
     </div>
-    <div class="col d-flex">
-      <i class="bi bi-gear fs-1 text-danger"></i>
-      <div class="p-3">
-        <h2>Best Ideas</h2>
-        <p>
-          Bring us your wildest ideas and with our creative mindset and tools
-          we’ll make it happen. Our team will provide you with a unique site
-          designed for your specific needs, and help you develop an online
-          business strategy to outplay your competitors
-        </p>
-      </div>
-    </div>
-    <div class="col d-flex">
-      <i class="bi bi-gear fs-1 text-danger"></i>
-      <div class="p-3">
-        <h2>Best Ideas</h2>
-        <p>
-          Bring us your wildest ideas and with our creative mindset and tools
-          we’ll make it happen. Our team will provide you with a unique site
-          designed for your specific needs, and help you develop an online
-          business strategy to outplay your competitors
-        </p>
-      </div>
-    </div>
-    <div class="col d-flex">
-      <i class="bi bi-gear fs-1 text-danger"></i>
-      <div class="p-3">
-        <h2>Best Ideas</h2>
-        <p>
-          Bring us your wildest ideas and with our creative mindset and tools
-          we’ll make it happen. Our team will provide you with a unique site
-          designed for your specific needs, and help you develop an online
-          business strategy to outplay your competitors
-        </p>
-      </div>
-    </div>
+
   </div>
 
   <div class="card border-0">
