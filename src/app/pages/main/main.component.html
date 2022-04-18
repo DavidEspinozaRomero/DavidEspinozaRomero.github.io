@@ -30,39 +30,37 @@
   <div class="card border-0">
     <img
       class="card-img ar-16"
-      src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      src="https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       alt="bg img computer"
     />
     <div
       class="card-img-overlay bg-black opacity-75 d-flex justify-content-center align-items-center"
     >
       <div class="row">
-        <div class="col text-center">
-          <p class="fs-2 p-3 bg-danger rounded" style="width: 3rem;
-					height: 3rem;">1</p>
-          <p class="fs-2">Find</p>
-          <p>
-            We will find clients in your area looking for your business services
-            through our targeted marketing systems.
+        <div class="col text-center" *ngFor="let item of s3Items">
+          <p
+            class="fs-2 p-3 bg-danger rounded"
+            style="width: 3rem;
+					height: 3rem;
+					line-height: 1rem;"
+          >
+            {{item.number}}
           </p>
-        </div>
-        <div class="col text-center">
-          <p class="fs-2 p-3 bg-white rounded">1</p>
-          <p class="fs-2">Find</p>
+          <p class="fs-2"> {{item.title}} </p>
           <p>
-            We will find clients in your area looking for your business services
-            through our targeted marketing systems.
-          </p>
-        </div>
-        <div class="col text-center">
-          <p class="fs-2 p-3 bg-white rounded">1</p>
-          <p class="fs-2">Find</p>
-          <p>
-            We will find clients in your area looking for your business services
-            through our targeted marketing systems.
+            {{item.description}}
           </p>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+
+<div class="p-3 text-center">
+	<img
+	class="card-img ar-4"
+	src="https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+	alt="bg img computer"
+	/>
 </div>
