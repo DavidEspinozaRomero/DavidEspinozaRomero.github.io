@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
 import { PathNotFoundComponent } from "./pages/path-not-found/path-not-found.component";
+import { AppComponent } from "./app.component";
 
 const routes: Routes = [
   // {
