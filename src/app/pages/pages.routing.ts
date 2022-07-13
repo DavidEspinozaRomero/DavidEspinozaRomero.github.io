@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: "", component: MainComponent },
   { path: "projects", component: ProjectsComponent },
   { path: "contact", component: ContactComponent },
-  { path: "about", component: AboutUsComponent },
+  { path: "about-us", component: AboutUsComponent },
   { path: "404", component: PathNotFoundComponent },
   { path: "**", pathMatch: "full", redirectTo: "404" },
 ];
