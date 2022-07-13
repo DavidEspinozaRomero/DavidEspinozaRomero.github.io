@@ -10,10 +10,10 @@ interface menuItem {
 })
 export class MenuComponent implements OnInit {
   menuItems: menuItem[] = [
-    {text: 'Home', routerLink: './' },
-    {text: 'Contacto', routerLink: './contact' },
-    {text: 'Proyectos', routerLink: './projects' },
-    {text: 'Nosotros', routerLink: './about-us' },
+    {text: 'Home', routerLink: '/' },
+    {text: 'Contacto', routerLink: '/contact' },
+    {text: 'Proyectos', routerLink: '/projects' },
+    {text: 'Nosotros', routerLink: '/about-us' },
   ];
   constructor() {}
 

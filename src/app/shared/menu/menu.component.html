@@ -3,6 +3,7 @@
     <li class="list-group-item bg-black text-white" *ngFor="let item of menuItems">
       <a
       role="button"
+      [routerLink]="item.routerLink"
       >
         {{ item.text }}
       </a>
