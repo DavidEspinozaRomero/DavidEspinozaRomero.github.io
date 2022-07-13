@@ -1,14 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MenuComponent } from './menu/menu.component';
-
-
+import { NgModule } from "@angular/core";
+import { CommonModule, RouterModule } from "@angular/common";
+import { MenuComponent } from "./menu/menu.component";
 
 @NgModule({
   declarations: [MenuComponent],
   exports: [MenuComponent],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule, RouterModule],
 })
-export class SharedModule { }
+export class SharedModule {}
