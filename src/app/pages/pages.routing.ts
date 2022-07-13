@@ -5,6 +5,7 @@ import { MainComponent } from './main/main.component';
 import { ProjectsComponent } from "./projects/projects.component";
 import { AboutUsComponent } from "./about-us/about-us.component";
 import { ContactComponent } from "./contact/contact.component";
+import { PathNotFoundComponent } from "./path-not-found/path-not-found.component";
 
 
 const routes: Routes = [
