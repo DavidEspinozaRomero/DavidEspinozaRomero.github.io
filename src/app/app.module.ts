@@ -7,14 +7,18 @@ import {
 } from "@angular/common";
 
 import { AppRoutingModule } from "./app.routing";
-import { AppComponent } from "./app.component";
 import { ComponentsModule } from "./components/components.module";
-import { PagesModule } from "./pages/pages.module";
 import { SharedModule } from "./shared/shared.module";
+import { AppComponent } from "./app.component";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, ComponentsModule, PagesModule, SharedModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ComponentsModule,
+    SharedModule,
+  ],
   providers: [
     Location,
     { provide: LocationStrategy, useClass: HashLocationStrategy },
