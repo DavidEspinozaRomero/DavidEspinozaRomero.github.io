@@ -9,11 +9,6 @@ const routes: Routes = [
   //   path: "auth",
   //   loadChildren: () => import("./auth/auth.module").then((m) => m.AuthModule),
   // },
-  // {
-  //   path: "heroes",
-  //   loadChildren: () =>
-  //     import("./heroes/heroes.module").then((m) => m.HeroesModule),
-  // },
   
   { path: "/", component: AppComponent },
   // { path: "404", component: PathNotFoundComponent },
