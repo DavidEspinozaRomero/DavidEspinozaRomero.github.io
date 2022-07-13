@@ -10,7 +10,7 @@ const routes: Routes = [
   //   loadChildren: () => import("./auth/auth.module").then((m) => m.AuthModule),
   // },
   
-  { path: "/", component: AppComponent },
+  // { path: "/", component: AppComponent },
   // { path: "404", component: PathNotFoundComponent },
   // { path: "**", pathMatch: "full", redirectTo: "404" },
 ];
@@ -19,4 +19,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class PagesRoutingModule {}

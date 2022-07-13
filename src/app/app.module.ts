@@ -6,7 +6,7 @@ import {
   LocationStrategy,
 } from "@angular/common";
 
-import { AppRoutingModule } from "./app-routing.module";
+import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 import { ComponentsModule } from "./components/components.module";
 import { PagesModule } from "./pages/pages.module";
