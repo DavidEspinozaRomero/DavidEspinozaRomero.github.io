@@ -1,5 +1,3 @@
-<app-header></app-header>
-
 <main class="bg-black text-white">
   <section id="intro" class="card border-0">
     <img
@@ -27,7 +25,7 @@
   </section>
 
   <section id="work-methods" class="row row-cols-2 mx-5 align-items-center">
-    <div class="col d-flex" *ngFor="let item of s6Items">
+    <div class="col d-flex" *ngFor="let item of workMethods">
       <i class="fs-1 text-danger" [class]="item.icon"></i>
       <div class="p-3 me-5">
         <h2>{{ item.title }}</h2>

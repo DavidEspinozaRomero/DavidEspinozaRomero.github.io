@@ -18,11 +18,26 @@
             <a
               role="button"
               [routerLink]="item.routerLink"
-              routerLinkActive="text-white"
+              routerLinkActive="text-danger"
+              [routerLinkActiveOptions]="{ exact: true }"
               class="nav-link text-secondary"
             >
-              <i class="bi text-center fs-4 d-block" [class]="item.icon" ></i>
+              <i class="text-center fs-4 d-block" [class]="item.icon"></i>
               {{ item.label }}
+            </a>
+          </li>
+          <li>
+            <a
+              role="button"
+              target="_blank"
+              href="../../../../assets/docs/david_espinoza_romero.pdf"
+              download="david_espinoza_romero.pdf"
+              class="nav-link text-secondary"
+            >
+              <i
+                class="text-center fs-4 d-block bi bi-file-earmark-pdf-fill"
+              ></i>
+              CV
             </a>
           </li>
         </ul>
@@ -30,28 +45,3 @@
     </div>
   </div>
 </header>
-
-<!-- <li>
-  <a class="nav-link text-white">
-    <i class="bi bi-x-circle d-block"></i>
-    Dashboard
-  </a>
-</li>
-<li>
-  <a class="nav-link text-white">
-    <i class="bi bi-x-circle d-block"></i>
-    Orders
-  </a>
-</li>
-<li>
-  <a class="nav-link text-white">
-    <i class="bi bi-x-circle d-block"></i>
-    Products
-  </a>
-</li>
-<li>
-  <a class="nav-link text-white">
-    <i class="bi bi-x-circle d-block"></i>
-    Customers
-  </a>
-</li> -->

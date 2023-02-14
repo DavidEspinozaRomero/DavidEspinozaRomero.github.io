@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { RoutingRootPaths } from 'src/app/models/rootpaths.enum';
 
 @Component({
   selector: 'app-header',
@@ -10,12 +11,13 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+
   //#region Variables
   menuItems: menuItem[] = [
-    { label: 'Home', routerLink: '/' },
-    { label: 'Contacto', routerLink: '/contact' },
-    { label: 'Proyectos', routerLink: '/projects' },
-    { label: 'Nosotros', routerLink: '/about-us' },
+    { label: 'Home', icon: 'bi bi-house-fill', routerLink: RoutingRootPaths.home },
+    { label: 'Contact', icon: 'bi bi-chat', routerLink: RoutingRootPaths.contact },
+    { label: 'Projects', icon: 'bi bi-folder-fill', routerLink: RoutingRootPaths.projects },
+    { label: 'About me', icon: 'bi bi-person-fill', routerLink: RoutingRootPaths.aboutUs },
   ];
   //#endregion Variables
 }
@@ -23,6 +25,7 @@ export class HeaderComponent {
 //#region Interfaces
 interface menuItem {
   label: string;
+  icon: string;
   routerLink: string;
 }
 //#endregion Interfaces
