@@ -1,0 +1,57 @@
+<header class="fixed-top">
+  <div class="px-1 text-bg-dark">
+    <div class="container">
+      <div
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+      >
+        <a
+          routerLink="/"
+          class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+        >
+          <i class="bi bi-house fs-4 me-2" aria-label="logo Deerhou"></i>
+        </a>
+
+        <ul
+          class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+        >
+          <li *ngFor="let item of menuItems">
+            <a
+              role="button"
+              [routerLink]="item.routerLink"
+              routerLinkActive="text-white"
+              class="nav-link text-secondary"
+            >
+              <i class="bi text-center fs-4 d-block" [class]="item.icon" ></i>
+              {{ item.label }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- <li>
+  <a class="nav-link text-white">
+    <i class="bi bi-x-circle d-block"></i>
+    Dashboard
+  </a>
+</li>
+<li>
+  <a class="nav-link text-white">
+    <i class="bi bi-x-circle d-block"></i>
+    Orders
+  </a>
+</li>
+<li>
+  <a class="nav-link text-white">
+    <i class="bi bi-x-circle d-block"></i>
+    Products
+  </a>
+</li>
+<li>
+  <a class="nav-link text-white">
+    <i class="bi bi-x-circle d-block"></i>
+    Customers
+  </a>
+</li> -->
