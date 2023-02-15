@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,8 +8,10 @@ import { CommonModule } from '@angular/common';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
-  s3Items = [
+export class HomeComponent implements OnInit {
+  //#region
+
+  path = [
     {
       number: '1',
       title: 'Find',
@@ -56,4 +58,11 @@ export class HomeComponent {
         'I am committed to effective communication and transparency. I make sure to maintain clear communication with my teammates and clients, to make sure that everyone is aware of the progress of the project and that the agreed objectives are met.',
     },
   ];
+
+  xs = window.innerWidth > 576;
+  //#endregion
+
+  ngOnInit(): void {
+    console.log(this.xs);
+  }
 }

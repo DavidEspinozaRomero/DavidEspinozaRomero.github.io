@@ -1,19 +1,31 @@
+<div style="height: 59px"></div>
 <header class="fixed-top">
-  <div class="px-1 text-bg-dark">
-    <div class="container">
-      <div
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+  <nav
+    class="navbar navbar-expand-sm navbar-dark bg-dark"
+    aria-label="Fifth navbar example"
+  >
+    <div class="container-fluid">
+      <a routerLink="/" class="navbar-brand">
+        <i class="bi bi-pc-display fs-4 me-2" aria-label="logo Deerhou"></i>
+        Deerhou
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarHeader"
+        aria-controls="navbarHeader"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-        <a
-          routerLink="/"
-          class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
-        >
-          <i class="bi bi-house fs-4 me-2" aria-label="logo Deerhou"></i>
-        </a>
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <ul
-          class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
-        >
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarHeader"
+      >
+        <ul class="nav col col-lg-auto text-small justify-content-end">
           <li *ngFor="let item of menuItems">
             <a
               role="button"
@@ -43,5 +55,5 @@
         </ul>
       </div>
     </div>
-  </div>
+  </nav>
 </header>

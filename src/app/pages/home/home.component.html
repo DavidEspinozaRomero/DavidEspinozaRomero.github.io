@@ -72,7 +72,7 @@
     </div>
   </section>
 
-  <section id="" class="p-3 text-center">
+  <section id="internet-marketing" class="p-3 text-center">
     <h3>Internet Marketing</h3>
     <p>
       Get a winning strategy for promoting your business online, including
@@ -81,7 +81,7 @@
     </p>
   </section>
 
-  <section id="" class="card border-0">
+  <section id="path" class="card border-0">
     <img
       class="card-img ar-16"
       src="https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -91,22 +91,27 @@
     <div
       class="card-img-overlay bg-black opacity-75 d-flex justify-content-center align-items-center"
     >
-      <div class="row mx-5">
-        <div class="col mx-5 text-center" *ngFor="let item of s3Items">
+      <div class="row justify-content-center">
+        <div
+          class="col-auto col-sm-3 text-center"
+          [ngClass]="{ 'd-flex': !xs }"
+          *ngFor="let item of path"
+        >
           <p
             class="fs-2 p-3 mx-auto bg-danger rounded"
+            [ngClass]="{ 'me-3': !xs }"
             style="width: 3rem; height: 3rem; line-height: 1rem"
           >
             {{ item.number }}
           </p>
-          <p class="fs-2">{{ item.title }}</p>
-          <p>{{ item.description }}</p>
+          <p class="fs-2" [ngClass]="{ 'me-3': !xs }">{{ item.title }}</p>
+          <p [ngClass]="{ 'text-start': !xs }">{{ item.description }}</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="" class="p-3 text-center">
+  <section id="projects-collage" class="p-3 text-center">
     <img
       class="card-img ar-4"
       src="https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -115,7 +120,7 @@
     />
   </section>
 
-  <section id="" class="card border-0">
+  <!-- <section id="focused-work" class="card border-0">
     <img
       class="card-img ar-16"
       src="https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -125,12 +130,12 @@
     <div
       class="card-img-overlay bg-black opacity-75 d-flex justify-content-center align-items-center"
     >
-      <div class="row">
+      <div class="row row-cols-1 row-cols-sm-3">
         <div class="col text-center">
           <p class="fs-2 p-3 mx-auto rounded">
             Industry Expertise +
             <br />
-            Laser-Focused Team =
+            Laser-Focused =
             <br />
             <strong class="fs-1 text-danger">SUCCESS</strong>
           </p>
@@ -146,7 +151,7 @@
             sales, conversions, targeted traffic, etc).
           </p>
         </div>
-        <div class="col">
+        <div class="col-5 col-sm-auto">
           <img
             class="card-img"
             src="https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -156,5 +161,5 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </main>

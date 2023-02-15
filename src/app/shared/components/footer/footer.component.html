@@ -1,6 +1,6 @@
 <footer class="p-3 text-bg-dark">
   <div class="row ms-3 justify-content-between">
-    <div class="col-6 col-md-2 mb-3" *ngFor="let item of [1, 1]">
+    <div class="col-6 col-md-2 mb-3">
       <h5 class="fs-4 ff-t">Productos</h5>
       <ul class="nav flex-column">
         <li class="nav-item mb-2">
@@ -23,23 +23,18 @@
 
     <div class="col-6 px-4">
       <p class="h4">Subscribe to our newsletter</p>
-      <p class="">Subscribe to our newsletter</p>
-
+      <!-- <p >Subscribe to our newsletter</p> -->
+      <br>
       <div class="input-group mb-3">
         <input
+          id="email"
           type="text"
           class="form-control"
           placeholder="name@example.com"
           aria-label="name@example.com"
           aria-describedby="button-addon2"
         />
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          id="button-addon2"
-        >
-          Enviar
-        </button>
+        <button class="btn btn-outline-secondary" type="submit">Enviar</button>
       </div>
     </div>
   </div>
