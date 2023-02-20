@@ -1,0 +1,47 @@
+.card-title {
+  position: relative;
+}
+
+.card-text {
+  position: relative;
+}
+
+.card-semi-glass {
+  transform: translateY(1rem);
+  border-radius: 1rem;
+  box-shadow: inset 0px 0px 8px 0px crimson, 4px 4px 8px 0px crimson;
+  transition: 0.5s ease;
+  filter: grayscale(1);
+
+  &::after {
+    content: "";
+  }
+  &::before {
+    content: "";
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    filter: grayscale(0);
+
+    & .iconRotateY {
+      animation: rotateIconY 4s linear forwards infinite;
+    }
+  }
+}
+
+.gearSpin-a {
+  animation: gearSpin 2s linear forwards infinite;
+}
+
+@keyframes rotateIconY {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}

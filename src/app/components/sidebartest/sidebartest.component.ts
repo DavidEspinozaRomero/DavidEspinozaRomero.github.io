@@ -1,6 +1,9 @@
+import { CommonModule } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
 
 @Component({
+  standalone: true,
+  imports: [CommonModule],
   selector: "app-sidebartest",
   templateUrl: "./sidebartest.component.html",
   styleUrls: ["./sidebartest.component.scss"],

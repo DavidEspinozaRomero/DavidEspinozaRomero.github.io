@@ -1,38 +1,55 @@
+<!-- <div class="bg-soft-primary" style="height: 100px;"></div> -->
+
 <main class="bg-black text-white">
   <section id="intro" class="card border-0">
     <img
-      class="card-img ar-16"
       src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       alt="bg img computer"
+      class="card-img ar-16 vh-90"
       loading="lazy"
     />
     <div
       class="card-img-overlay bg-black opacity-75 d-flex justify-content-center align-items-center"
     >
       <div class="text-center">
-        <h2 class="card-title">David Espinoza</h2>
-        <p class="card-text">Frontend Developer</p>
+        <h2 class="card-title">
+          <app-smoke-text paragraph="David Espinoza"></app-smoke-text>
+        </h2>
+        <p class="card-text">
+          <app-smoke-text paragraph="Frontend Developer"></app-smoke-text>
+        </p>
       </div>
     </div>
   </section>
 
   <section id="why-us" class="p-3 my-3 text-center">
-    <h3>Why Us?</h3>
+    <h3>
+      <app-smoke-text paragraph="Why Us?"></app-smoke-text>
+    </h3>
     <p>
-      Your ingenious ideas. Our state-of-the-art
+      <app-smoke-text
+        paragraph="Your ingenious ideas. Our state-of-the-art"
+      ></app-smoke-text>
       <br />
-      web development
+      <app-smoke-text paragraph="web development"></app-smoke-text>
     </p>
   </section>
 
-  <section id="work-methods" class="row row-cols-1 row-cols-lg-2 mx-5">
-    <div class="col d-flex" *ngFor="let item of workMethods">
-      <i class="fs-1 text-danger" [class]="item.icon"></i>
-      <div class="p-3 me-5">
-        <h2>{{ item.title }}</h2>
-        <p>
-          {{ item.description }}
-        </p>
+  <section id="work-methods" class="mx-5 pb-4">
+    <div class="row row-cols-1 row-cols-lg-2">
+      <div class="col" *ngFor="let item of workMethods">
+        <div class="d-flex mb-5 p-3 card-semi-glass">
+          <i
+            class="fs-1 text-danger card-semi-glass__icon"
+            [class]="item.icon"
+          ></i>
+          <div class="ps-3">
+            <h2>{{ item.title }}</h2>
+            <span>
+              {{ item.description }}
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -48,11 +65,17 @@
       class="card-img-overlay bg-black opacity-75 d-flex justify-content-center align-items-center"
     >
       <div class="text-center">
-        <h2 class="card-title">Our Latest Projects</h2>
+        <h2 class="card-title">
+          <app-smoke-text paragraph="Our Latest Projects"></app-smoke-text>
+        </h2>
         <p class="card-text">
-          Today's marketing problems are complex, specialized and ever changing.
-          Who can keep up with all the latest trends and technologies? Here I
-          am.
+          <app-smoke-text
+            paragraph="Today's marketing problems are complex, specialized and ever changing."
+          ></app-smoke-text>
+          <br />
+          <app-smoke-text
+            paragraph="Who can keep up with all the latest trends and technologies? Here I am."
+          ></app-smoke-text>
         </p>
       </div>
     </div>
@@ -73,11 +96,17 @@
   </section>
 
   <section id="internet-marketing" class="p-3 text-center">
-    <h3>Internet Marketing</h3>
+    <h3>
+      <app-smoke-text paragraph="Internet Marketing"></app-smoke-text>
+    </h3>
     <p>
-      Get a winning strategy for promoting your business online, including
+      <app-smoke-text
+        paragraph="Get a winning strategy for promoting your business online, including"
+      ></app-smoke-text>
       <br />
-      SEO, advertising and branding
+      <app-smoke-text
+        paragraph="SEO, advertising and branding"
+      ></app-smoke-text>
     </p>
   </section>
 

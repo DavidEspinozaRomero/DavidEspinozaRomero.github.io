@@ -1,0 +1,7 @@
+<span
+  #letterSpan
+  *ngFor="let letter of letters; index as i_letter"
+  [ngStyle]="{ display: letter == ' ' ? 'inline' : 'inline-block' }"
+  (mouseenter)="smokeTextEfect(letterSpan)"
+  >{{ letter }}</span
+>

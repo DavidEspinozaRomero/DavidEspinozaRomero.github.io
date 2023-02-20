@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SmokeTextComponent } from 'src/app/components';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SmokeTextComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
@@ -34,25 +35,25 @@ export class HomeComponent implements OnInit {
 
   workMethods = [
     {
-      icon: 'bi bi-calendar-check',
+      icon: 'bi bi-calendar-check iconRotateY',
       title: 'Experience',
       description:
         "I' ve been working in software development for years, and have gained extensive experience in a variety of programming languages and technologies. I have a solid knowledge in the development of web applications, mobile applications, database management systems, among others.",
     },
     {
-      icon: 'bi bi-gear',
+      icon: 'bi bi-gear iconRotateY',
       title: 'Problem Solving',
       description:
         'I am comfortable working on complex problems and solving them effectively. I have gained skills to quickly identify problem areas as well as find creative and effective solutions.',
     },
     {
-      icon: 'bi bi-people',
+      icon: 'bi bi-people iconRotateY',
       title: 'Teamwork',
       description:
         'I am a team player and enjoy working collaboratively with other developers, designers, and clients to ensure project goals are achieved. I am comfortable working in agile environments and using methodologies such as Scrum or Kanban.',
     },
     {
-      icon: 'bi bi-wechat',
+      icon: 'bi bi-wechat iconRotateY',
       title: 'Effective Communication',
       description:
         'I am committed to effective communication and transparency. I make sure to maintain clear communication with my teammates and clients, to make sure that everyone is aware of the progress of the project and that the agreed objectives are met.',
