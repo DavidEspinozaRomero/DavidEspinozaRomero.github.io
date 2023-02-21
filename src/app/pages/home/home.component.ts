@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SmokeTextComponent } from 'src/app/components';
+import { SmokeTextComponent, BgAnimatedInteractiveComponent } from 'src/app/components';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, SmokeTextComponent],
+  imports: [CommonModule, SmokeTextComponent, BgAnimatedInteractiveComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
