@@ -8,10 +8,11 @@ import {
 
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, HttpClientModule ,AppRoutingModule],
   providers: [
     Location,
     { provide: LocationStrategy, useClass: HashLocationStrategy },
