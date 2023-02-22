@@ -1,0 +1,32 @@
+<section class="card-stack-list">
+  <article *ngFor="let card of cards" class="card-stack">
+    <header class="card-stack-header">
+      <p class="card-stack-header__text">{{ card.date }}</p>
+      <h2 class="card-stack-header__title">{{ card.title }}</h2>
+    </header>
+    <div class="card-stack-author">
+      <a href="#" class="card-stack-author__avatar">
+        <img
+          class="card-stack-author__image"
+          [src]="
+            card.photo || 'https://randomuser.me/api/portraits/women/31.jpg'
+          "
+          alt="author avatar img"
+        />
+      </a>
+      <svg class="half-circle" viewBox="0 0 106 57">
+        <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+      </svg>
+      <div class="card-stack-author__name">
+        <div class="card-stack-author__prefix">{{ card.prefix }}</div>
+        {{ card.author }}
+      </div>
+    </div>
+
+    <div class="card-stack-footer">
+      <small *ngFor="let badge of card.badges" class="card__badge">
+        {{ badge }}
+      </small>
+    </div>
+  </article>
+</section>

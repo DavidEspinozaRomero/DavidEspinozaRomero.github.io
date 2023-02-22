@@ -47,7 +47,7 @@
 }
 
 // projects
-#projects {
+#projects-view {
   position: relative;
   // width: 100vw;
   // width: 100svw;
@@ -58,6 +58,11 @@
   // justify-content: center;
   // align-items: center;
   // overflow: hidden;
+}
+
+.btn-animated-pulse {
+  border-radius: 0.5rem;
+  animation: btnPulse 3s ease-out infinite;
 }
 
 .bg-animated-overlay {

@@ -13,7 +13,7 @@
     >
       <div class="text-center">
         <h2 class="card-title">
-          <app-smoke-text paragraph="David Espinoza"></app-smoke-text>
+          <app-smoke-text paragraph="David Espinoza Romero"></app-smoke-text>
         </h2>
         <p class="card-text">
           <app-smoke-text paragraph="Frontend Developer"></app-smoke-text>
@@ -24,7 +24,7 @@
 
   <section id="why-us" class="p-3 my-3 text-center">
     <h3>
-      <app-smoke-text paragraph="Why Us?"></app-smoke-text>
+      <app-smoke-text paragraph="Why Me?"></app-smoke-text>
     </h3>
     <p>
       <app-smoke-text
@@ -56,7 +56,7 @@
 
   <section id="latest-projects" class="card border-0">
     <img
-      class="card-img ar-4"
+      class="card-img ar-4 vh-100"
       src="https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       alt="bg img computer"
       loading="lazy"
@@ -82,30 +82,92 @@
   </section>
 
   <section id="projects" class="">
+    <app-cards-stack [cards]="cards"></app-cards-stack>
+  </section>
+
+  <section id="projects-view" class="">
     <app-bg-animated-interactive class=""> </app-bg-animated-interactive>
     <div class="bg-animated-overlay">
-      <button class="btn btn-danger" type="button">View More</button>
+      <a routerLink="projects" class="btn btn-danger" type="button"
+        >View More</a
+      >
     </div>
   </section>
 
   <section id="internet-marketing" class="p-3 text-center">
     <h3>
-      <app-smoke-text paragraph="Internet Marketing"></app-smoke-text>
+      <app-smoke-text paragraph="Work Expertice"></app-smoke-text>
     </h3>
     <p>
       <app-smoke-text
-        paragraph="Get a winning strategy for promoting your business online, including"
+        paragraph="I work to create an exceptional user experience,"
       ></app-smoke-text>
       <br />
       <app-smoke-text
-        paragraph="SEO, advertising and branding"
+        paragraph="make sure that the site is compatible with different browsers and devices,"
+      ></app-smoke-text>
+      <br />
+      <app-smoke-text
+        paragraph="which means that your site will look good and behave effectively everywhere."
       ></app-smoke-text>
     </p>
   </section>
 
-  <section id="path" class="card border-0">
+  <section id="focused-work" class="card border-0">
     <img
       class="card-img ar-16"
+      src="https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      alt="bg img computer"
+      loading="lazy"
+    />
+    <div
+      class="card-img-overlay bg-black opacity-75 justify-content-center align-items-center"
+    >
+      <p class="fs-2 p-3 text-center">
+        Industry Expertise + Laser-Focused =
+        <strong class="fs-1 text-danger">SUCCESS</strong>
+      </p>
+      <p class="fs-5 p-5 text-center">
+        <span class=""
+          >Do you want your website to have an impressive design and an
+          exceptional user experience? I'm an Angular Frontend developer expert,
+          in web design and user interface development.</span
+        >
+        <br />
+        <br />
+        <span
+          >Responsible for creating the face of your website, which includes
+          everything that visitors will see and experience when interacting with
+          your site. From page layout and structure to navigation and
+          usability.</span
+        >
+        <br />
+        <br />
+        <span>
+          You can be sure that your website will have an attractive design and
+          solid functionality. Also, optimize your site so that it loads quickly
+          and is optimized for search engines.</span
+        >
+      </p>
+      <p class="text-center fs-3">
+        <strong
+          >Don't rely on a basic template to represent your business online.
+          <a
+            routerLink="contact"
+            class="btn btn-danger btn-animated-pulse"
+            role="button"
+          >
+            Hire me
+          </a>
+          to create an attractive, functional and effective website that will
+          make your brand stand out.</strong
+        >
+      </p>
+    </div>
+  </section>
+  <!-- <section id="path" class="card border-0">
+    <img
+      class="card-img ar-16 vh-90"
       src="https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       alt="bg img computer"
       loading="lazy"
@@ -131,57 +193,14 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section id="projects-collage" class="p-3 text-center">
+  <!-- <section id="projects-collage" class="p-3 text-center">
     <img
-      class="card-img ar-4"
+      class="card-img ar-4 vh-90"
       src="https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       alt="bg img computer"
       loading="lazy"
     />
-  </section>
-
-  <!-- <section id="focused-work" class="card border-0">
-    <img
-      class="card-img ar-16"
-      src="https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      alt="bg img computer"
-      loading="lazy"
-    />
-    <div
-      class="card-img-overlay bg-black opacity-75 d-flex justify-content-center align-items-center"
-    >
-      <div class="row row-cols-1 row-cols-sm-3">
-        <div class="col text-center">
-          <p class="fs-2 p-3 mx-auto rounded">
-            Industry Expertise +
-            <br />
-            Laser-Focused =
-            <br />
-            <strong class="fs-1 text-danger">SUCCESS</strong>
-          </p>
-        </div>
-
-        <div class="col">
-          <p>
-            Businesses know that a single, full-time marketing manager simply
-            cannot perform all the roles in digital marketing. Comrade Web
-            Agency positions itself as your digital marketing partner: we cover
-            all aspects of your website, branding, digital marketing strategy,
-            and data analysis, all while owning our results (leads, calls,
-            sales, conversions, targeted traffic, etc).
-          </p>
-        </div>
-        <div class="col-5 col-sm-auto">
-          <img
-            class="card-img"
-            src="https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            alt="bg img computer"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    </div>
   </section> -->
 </main>

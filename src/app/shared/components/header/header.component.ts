@@ -14,8 +14,8 @@ export class HeaderComponent {
 
   //#region Variables
   menuItems: menuItem[] = [
-    { label: 'Home', icon: 'bi bi-house-fill', routerLink: RoutingRootPaths.home },
-    { label: 'Contact', icon: 'bi bi-chat', routerLink: RoutingRootPaths.contact },
+    { label: 'Home', icon: 'bi bi-house-door-fill', routerLink: RoutingRootPaths.home },
+    { label: 'Contact', icon: 'bi bi-chat-fill', routerLink: RoutingRootPaths.contact },
     { label: 'Projects', icon: 'bi bi-folder-fill', routerLink: RoutingRootPaths.projects },
     { label: 'About me', icon: 'bi bi-person-fill', routerLink: RoutingRootPaths.aboutUs },
   ];

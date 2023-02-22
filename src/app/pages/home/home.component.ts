@@ -1,16 +1,82 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SmokeTextComponent, BgAnimatedInteractiveComponent } from 'src/app/components';
+import { RouterModule } from '@angular/router';
+
+import {
+  SmokeTextComponent,
+  BgAnimatedInteractiveComponent,
+  CardProperties,
+  CardsStackComponent,
+} from 'src/app/components';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, SmokeTextComponent, BgAnimatedInteractiveComponent],
+  imports: [
+    CommonModule,
+    RouterModule,
+    SmokeTextComponent,
+    BgAnimatedInteractiveComponent,
+    CardsStackComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  //#region
+  //#region Variables
+  cards: CardProperties[] = [
+    {
+      title: 'WhatsApp Bot',
+      date: '06-2022 / 01-2023',
+      author: 'David Espinoza Romero',
+      prefix: 'Frontend Developer',
+      photo: './../../../assets/photos/david_e.jpg',
+      badges: [
+        'Es6',
+        'Typescript',
+        'Rxjs',
+        'Bootstrap',
+        'Angular',
+        'Jest',
+        'Postgress',
+        // 'Mailer',
+        // 'Websocket',
+        'Nest.js',
+      ],
+    },
+    {
+      title: "Lilia's Bordados",
+      date: '03-2023 / 04-2023',
+      author: 'Lilia Artheaga',
+      prefix: 'Modista',
+      photo: '',
+      badges: ['Es6', 'Bootstrap', 'Sass', 'Angular'],
+    },
+    {
+      title: 'title2',
+      date: 'text2',
+      author: 'name',
+      prefix: 'lorem',
+      photo: '',
+      badges: ['Angular'],
+    },
+    {
+      title: 'title2',
+      date: 'text2',
+      author: 'David',
+      prefix: 'Programer',
+      photo: '',
+      badges: ['Angular'],
+    },
+    {
+      title: 'title2',
+      date: 'text2',
+      author: 'David',
+      prefix: 'Programer',
+      photo: '',
+      badges: ['Angular'],
+    },
+  ];
 
   path = [
     {
@@ -61,7 +127,7 @@ export class HomeComponent implements OnInit {
   ];
 
   xs = window.innerWidth > 576;
-  //#endregion
+  //#endregion Variables
 
   ngOnInit(): void {
     console.log(this.xs);

@@ -1,6 +1,6 @@
 section {
   position: absolute;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   width: 100vw;
   width: 100svw;
   height: 100vh;
@@ -28,6 +28,7 @@ section {
     width: calc(20svw - 4px);
     aspect-ratio: 1;
     background-color: #181818;
+    border-radius: 0.25rem;
     z-index: 0;
     transition: 1.5s;
 
@@ -52,7 +53,6 @@ section {
     }
   }
 }
-
 
 @keyframes bgAnimated {
   0% {
