@@ -17,16 +17,16 @@
     >
   </div>
   <div class="mb-3">
-    <label for="comment" class="form-label">Message</label>
+    <label for="message" class="form-label">Message</label>
     <textarea
-      id="comment"
+      id="message"
       class="form-control"
-      formControlName="comment"
+      formControlName="message"
       rows="3"
-      [ngClass]="{ 'is-invalid': utils.isValidControl(contactForm, 'comment') }"
+      [ngClass]="{ 'is-invalid': utils.isValidControl(contactForm, 'message') }"
     ></textarea>
     <small
-      *ngIf="utils.isValidControl(contactForm, 'comment')"
+      *ngIf="utils.isValidControl(contactForm, 'message')"
       id="helpId"
       class="form-text text-danger"
       >min 5 letters</small

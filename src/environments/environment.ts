@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'httpaasdlkf'
+  api: 'http://localhost:3000'
 };
 
 /*

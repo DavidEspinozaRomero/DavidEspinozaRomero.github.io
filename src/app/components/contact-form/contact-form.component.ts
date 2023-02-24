@@ -24,10 +24,12 @@ export class ContactFormComponent {
       [
         Validators.required,
         Validators.email,
-        // Validators.pattern(/d/)
+        Validators.minLength(1),
+        Validators.maxLength(30),
+        Validators.pattern(RegExpAPP.email),
       ],
     ],
-    comment: ['', [Validators.required, Validators.minLength(5)]],
+    message: ['', [Validators.required, Validators.minLength(5)]],
   });
   //#endregion Variables
 
@@ -64,3 +66,7 @@ export class ContactFormComponent {
   }
   //#endregion Methods
 }
+
+export const RegExpAPP = {
+  email: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+};

@@ -9,7 +9,7 @@ export class AppServicesService {
   constructor(private httpClient: HttpClient) {}
 
   sendMessage(json: { email: string; comment: string }) {
-    const Url = ` ${this.#baseUrl}/personalPageMessage`;
+    const Url = `${this.#baseUrl}/contacts/personal-page-message`;
     return this.httpClient.post(Url, json);
   }
 }
