@@ -6,7 +6,7 @@
       class="form-control"
       formControlName="email"
       type="email"
-      placeholder="name@example.com"
+      placeholder="ethan.hopkins@example.com"
       [ngClass]="{ 'is-invalid': utils.isValidControl(contactForm, 'email') }"
     />
     <small
@@ -24,6 +24,7 @@
       formControlName="message"
       rows="3"
       [ngClass]="{ 'is-invalid': utils.isValidControl(contactForm, 'message') }"
+      placeholder="Hi, My name is Ethan Hopkins and I would like to know more about or need help whit 'Web App'. Please contact me at '(280) 443-6020', to talk about needs of my clients."
     ></textarea>
     <small
       *ngIf="utils.isValidControl(contactForm, 'message')"
@@ -33,5 +34,5 @@
     >
   </div>
 
-  <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+  <button class="btn btn-outline-secondary" type="submit">Send</button>
 </form>

@@ -1,0 +1,21 @@
+.bg-contact {
+  background-image: url("../../../assets/bg/contact-girl.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0px 0px 1rem .5rem black;
+  min-height: 40svw;
+
+}
+
+// .bg-contact::before {
+//   content: "";
+//   position: relative;
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: rgba(black, 1);
+//   display: block;
+//   left: 0;
+//   top: 0;
+//   opacity: 0.5;
+// }

@@ -41,13 +41,21 @@ const routes: Routes = [
           ),
       },
       {
-        path: RoutingRootPaths.aboutUs,
+        path: RoutingRootPaths.services,
         pathMatch: 'full',
         loadComponent: () =>
-          import('./pages/about-us/about-us.component').then(
-            (m) => m.AboutUsComponent
+          import('./pages/services/services.component').then(
+            (m) => m.ServicesComponent
           ),
       },
+      // {
+      //   path: RoutingRootPaths.aboutUs,
+      //   pathMatch: 'full',
+      //   loadComponent: () =>
+      //     import('./pages/about-us/about-us.component').then(
+      //       (m) => m.AboutUsComponent
+      //     ),
+      // },
       {
         path: '',
         pathMatch: 'full',

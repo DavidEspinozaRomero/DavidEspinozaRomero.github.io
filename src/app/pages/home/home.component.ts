@@ -129,7 +129,5 @@ export class HomeComponent implements OnInit {
   xs = window.innerWidth > 576;
   //#endregion Variables
 
-  ngOnInit(): void {
-    console.log(this.xs);
-  }
+  ngOnInit(): void {}
 }

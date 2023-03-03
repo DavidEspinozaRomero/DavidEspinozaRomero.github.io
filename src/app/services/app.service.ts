@@ -1,10 +1,14 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
 @Injectable({ providedIn: 'root' })
-export class AppServicesService {
+export class AppService {
+  //#region Variables
   #baseUrl = environment.api;
+
+  hideContactForm = new EventEmitter<boolean>();
+  //#endregion Variables
 
   constructor(private httpClient: HttpClient) {}
 

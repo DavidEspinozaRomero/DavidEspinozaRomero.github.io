@@ -6,8 +6,10 @@ import {
   Validators,
   FormGroup,
 } from '@angular/forms';
-import { AppServicesService } from 'src/app/services/app-services.service';
+
+import { AppService } from 'src/app/services/app.service';
 import { UtilsService } from 'src/app/utils/utils.service';
+import { CustomToastService } from 'src/app/services/custom-toast.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -18,7 +20,7 @@ import { UtilsService } from 'src/app/utils/utils.service';
 })
 export class ContactFormComponent {
   //#region Variables
-  contactForm = this.fb.group({
+  contactForm = this.fb.nonNullable.group({
     email: [
       '',
       [
@@ -35,8 +37,9 @@ export class ContactFormComponent {
 
   constructor(
     private readonly fb: FormBuilder,
-    private readonly appService: AppServicesService,
-    public readonly utils: UtilsService
+    private readonly appService: AppService,
+    public readonly utils: UtilsService,
+    public readonly toast: CustomToastService
   ) {}
 
   //#region Apis
@@ -46,10 +49,13 @@ export class ContactFormComponent {
       .sendMessage(data)
       .subscribe({
         next: (res) => {
-          console.log(res);
+          this.toast.success('Message send', 'Done!');
+          this.contactForm.reset();
         },
         error: (e) => {
-          console.log(e);
+          this.toast.error(
+            'somethig gone wrong sorry, pls send an email directly'
+          );
         },
       })
       .add();
