@@ -80,7 +80,7 @@ export class ServicesComponent {
           icon: 'bi bi-list-check',
           subtitle: 'Unit Testing',
           description:
-            'They are used to make sure that each function or component works correctly and produces the expected results. Essential to ensure software quality and facilitate long-term maintenance.',
+            'Used to make sure that each function or component works correctly and produces the expected results. Essential to ensure software quality and facilitate long-term maintenance.',
         },
       ],
     },
@@ -97,7 +97,7 @@ export class ServicesComponent {
           icon: 'bi bi-building-up',
           subtitle: 'Update',
           description:
-            'It is important to keep the website or application updated with the latest technologies and functionality to ensure that it remains relevant and useful to users. Updates may also include security patches and bug fixes to ensure the security and stability of the software.',
+            'It is important to keep the website or application updated with the latest technologies and functionality to ensure that it remains relevant and useful to users. Include security patches and bug fixes to ensure the security and stability of the software.',
         },
         {
           icon: 'bi bi-person-video',
