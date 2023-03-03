@@ -1,0 +1,24 @@
+<section class="px-4 py-5">
+  <h2 class="border-bottom">
+    {{ service?.title }}
+  </h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-sm-2 row-cols-md-3">
+    <article class="col-auto" *ngFor="let article of service?.articles">
+      <div class="mb-3 text-center">
+        <span
+          class="d-inline-block p-1 border border-danger rounded-circle shadow"
+        >
+          <i
+            class="d-inline-block px-3 py-2 text-bg-danger fs-2 rounded-circle"
+            [class]="article?.icon"
+          ></i>
+        </span>
+      </div>
+
+      <h3 class="fs-2 text-center">{{ article?.subtitle }}</h3>
+      <p>
+        {{ article?.description }}
+      </p>
+    </article>
+  </div>
+</section>
