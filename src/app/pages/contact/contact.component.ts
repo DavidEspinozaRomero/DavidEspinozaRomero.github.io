@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 
 import { ContactFormComponent } from 'src/app/components';
+import { EyesFollowComponent } from 'src/app/components/eyes-follow/eyes-follow.component';
 import { AppService } from 'src/app/services/app.service';
 
 import { HeaderComponent } from 'src/app/shared';
@@ -9,7 +10,7 @@ import { HeaderComponent } from 'src/app/shared';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, ContactFormComponent],
+  imports: [CommonModule, ContactFormComponent, EyesFollowComponent],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })

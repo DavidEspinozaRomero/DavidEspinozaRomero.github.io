@@ -1,0 +1,40 @@
+.box {
+  display: flex;
+  justify-content: center;
+
+  .eye {
+    position: relative;
+    margin: 0 1.5rem;
+    width: 8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 5px 45px rgba(white, 0.3), inset 0 0 15px 0 black,
+      inset 0 0 25px 0 crimson;
+
+    &::before {
+      content: "";
+      box-sizing: border-box;
+      width: 2rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(crimson, black);
+      position: absolute;
+      top: 50%;
+      left: 1.5rem;
+      transform: translate(-50%, -50%);
+    }
+    &::after {
+      content: "";
+      box-sizing: border-box;
+      width: 0.5rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: rgba(white, 0.4);
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
