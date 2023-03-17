@@ -13,6 +13,7 @@ export class CardsStackComponent {
 }
 
 export interface CardProperties {
+  href?: string;
   title: string;
   date: string;
   author: string;

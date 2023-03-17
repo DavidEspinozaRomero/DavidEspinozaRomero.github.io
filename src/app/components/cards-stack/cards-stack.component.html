@@ -2,10 +2,21 @@
   <article *ngFor="let card of cards" class="card-stack">
     <header class="card-stack-header">
       <p class="card-stack-header__text">{{ card.date }}</p>
-      <h2 class="card-stack-header__title">{{ card.title }}</h2>
+      <h2 class="card-stack-header__title">
+        <a
+          [href]="card?.href"
+          *ngIf="card?.href"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: inherit; text-decoration: none"
+        >
+          {{ card.title }}
+        </a>
+        {{ card?.href ? "" : card.title }}
+      </h2>
     </header>
     <div class="card-stack-author">
-      <a  class="card-stack-author__avatar">
+      <a class="card-stack-author__avatar">
         <img
           class="card-stack-author__image"
           [src]="

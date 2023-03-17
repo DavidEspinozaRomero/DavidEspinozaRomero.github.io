@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
   cards: CardProperties[] = [
     {
       title: 'WhatsApp Bot',
+      href: 'https://wwbot.netlify.app',
       date: '06-2022 / 01-2023',
       author: 'David Espinoza Romero',
       prefix: 'Frontend Developer',
@@ -46,6 +47,7 @@ export class HomeComponent implements OnInit {
     },
     {
       title: "Lilia's Bordados",
+      href: 'https://liliasbordados.netlify.app',
       date: '03-2023 / 04-2023',
       author: 'Lilia Artheaga',
       prefix: 'Modista',
