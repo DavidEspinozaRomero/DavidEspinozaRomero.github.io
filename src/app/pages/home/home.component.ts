@@ -26,6 +26,23 @@ export class HomeComponent implements OnInit {
   //#region Variables
   cards: CardProperties[] = [
     {
+      title: 'IVI Educa',
+      href: 'https://ivieduca.com',
+      date: '08-2021 / 12-2022',
+      author: 'Vinary Technology',
+      prefix: 'TI Company',
+      photo: './../../../assets/photos/ivieduca.png',
+      badges: [
+        'Es6',
+        'Typescript',
+        'Rxjs',
+        'Bootstrap',
+        'Ngx-Bootstrap',
+        'Chart.js',
+        'Angular',
+      ],
+    },
+    {
       title: 'WhatsApp Bot',
       href: 'https://wwbot.netlify.app',
       date: '06-2022 / 01-2023',
@@ -39,9 +56,9 @@ export class HomeComponent implements OnInit {
         'Bootstrap',
         'Angular',
         'Jest',
+        'Testing-Library',
         'Postgress',
-        // 'Mailer',
-        // 'Websocket',
+        'TypeORM',
         'Nest.js',
       ],
     },
@@ -53,22 +70,6 @@ export class HomeComponent implements OnInit {
       prefix: 'Modista',
       photo: '',
       badges: ['Es6', 'Bootstrap', 'Sass', 'Angular'],
-    },
-    {
-      title: 'title2',
-      date: 'text2',
-      author: 'name',
-      prefix: 'lorem',
-      photo: '',
-      badges: ['Angular'],
-    },
-    {
-      title: 'title2',
-      date: 'text2',
-      author: 'David',
-      prefix: 'Programer',
-      photo: '',
-      badges: ['Angular'],
     },
     {
       title: 'title2',

@@ -1,1 +1,55 @@
-<h1>projects</h1>
+<div class="bg-black text-white">
+  <div class="container pt-5">
+    <h1>Projects</h1>
+    <div class="row">
+      <div class="col col-md-4">
+        <ul class="list-group">
+          <li
+            *ngFor="let project of projects"
+            class="list-group-item"
+            role="button"
+            (click)="selectProject(project)"
+          >
+            {{ project.title }}
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-8 border border-secondary  rounded mb-5">
+        <div class="container">
+          <p
+            *ngFor="let description of project.description"
+            class=" mt-3 mb-0"
+          >
+            {{ description }}
+          </p>
+          <p>
+            Stack:
+            <small
+              *ngFor="let item of project.tech"
+              class="badge bg-secondary me-2"
+            >
+              {{ item }}
+            </small>
+          </p>
+          <ul class="my-4">
+            <li *ngFor="let paragraph of project.paragraphs">
+              <strong>{{ paragraph.subtitle }}</strong>
+              <p>{{ paragraph.description }}</p>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-center mb-5">
+            <a
+              *ngFor="let social of project.socialMedia"
+              target="_blank"
+              class="btn btn-outline-danger me-2"
+              [href]="social.href"
+              role="button"
+            >
+              {{ social.label }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
