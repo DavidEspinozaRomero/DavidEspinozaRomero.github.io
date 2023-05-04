@@ -1,10 +1,12 @@
 {
   "name": "deerhou",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:stats": "ng build --stats-json",
+    "analyze": "npm run build:stats && webpack-bundle-analyzer dist/deerhou/stats.json",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -28,7 +30,7 @@
     "zone.js": "0.13.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.0.0",
+    "@angular-devkit/build-angular": "16.0.0",
     "@angular/cli": "16.0.0",
     "@angular/compiler-cli": "16.0.0",
     "@types/jasmine": "4.3.1",
@@ -40,6 +42,7 @@
     "karma-coverage": "2.2.0",
     "karma-jasmine": "5.1.0",
     "karma-jasmine-html-reporter": "2.0.0",
-    "typescript": "4.9.5"
+    "typescript": "4.9.5",
+    "webpack-bundle-analyzer": "4.8.0"
   }
 }
