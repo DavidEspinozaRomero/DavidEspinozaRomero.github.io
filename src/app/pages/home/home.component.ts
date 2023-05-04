@@ -8,6 +8,7 @@ import {
   CardProperties,
   CardsStackComponent,
 } from 'src/app/components';
+import { ImgComponent } from 'src/app/components/img/img.component';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,7 @@ import {
     SmokeTextComponent,
     BgAnimatedInteractiveComponent,
     CardsStackComponent,
+    ImgComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
