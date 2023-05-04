@@ -6,6 +6,10 @@
   // box-shadow: inset 0px 0px 1rem 0.5rem black;
   // min-height: 90svw;
 }
+.bg-focused-work.lazy {
+  background-image: none;
+  background-color: #333;
+}
 
 .card-title {
   position: relative;
