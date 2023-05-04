@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   ReactiveFormsModule,
@@ -19,7 +19,13 @@ import { CustomToastService } from 'src/app/services/custom-toast.service';
   styleUrls: ['./contact-form.component.scss'],
 })
 export class ContactFormComponent {
+  
   //#region Variables
+  private readonly fb = inject(FormBuilder);
+  private readonly appService = inject(AppService);
+  public readonly utils = inject(UtilsService);
+  public readonly toast = inject(CustomToastService);
+
   contactForm = this.fb.nonNullable.group({
     email: [
       '',
@@ -35,12 +41,6 @@ export class ContactFormComponent {
   });
   //#endregion Variables
 
-  constructor(
-    private readonly fb: FormBuilder,
-    private readonly appService: AppService,
-    public readonly utils: UtilsService,
-    public readonly toast: CustomToastService
-  ) {}
 
   //#region Apis
   //Post

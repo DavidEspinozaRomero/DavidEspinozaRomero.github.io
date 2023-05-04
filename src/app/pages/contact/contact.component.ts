@@ -22,6 +22,5 @@ export class ContactComponent implements OnInit, OnDestroy {
   }
   ngOnDestroy(): void {
     this.appService.hideContactForm.emit(true);
-    // throw new Error('Method not implemented.');
   }
 }

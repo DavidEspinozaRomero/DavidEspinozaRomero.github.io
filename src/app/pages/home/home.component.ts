@@ -22,7 +22,7 @@ import {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   //#region Variables
   cards: CardProperties[] = [
     {
@@ -131,6 +131,4 @@ export class HomeComponent implements OnInit {
 
   xs = window.innerWidth > 576;
   //#endregion Variables
-
-  ngOnInit(): void {}
 }

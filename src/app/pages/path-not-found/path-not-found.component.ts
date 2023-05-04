@@ -8,8 +8,4 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./path-not-found.component.scss'],
   imports: [CommonModule],
 })
-export class PathNotFoundComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class PathNotFoundComponent {}

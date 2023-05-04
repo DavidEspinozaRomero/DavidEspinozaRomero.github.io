@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
   //#region  Variables
   projects = [
     {
@@ -150,10 +150,6 @@ export class ProjectsComponent implements OnInit {
 
   project = this.projects[0];
   //#endregion  Variables
-
-  constructor() {}
-
-  ngOnInit(): void {}
 
   selectProject(project: any) {
     this.project = project;
