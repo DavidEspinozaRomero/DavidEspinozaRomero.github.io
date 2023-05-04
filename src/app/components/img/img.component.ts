@@ -18,6 +18,7 @@ export class ImgComponent {
   @Input() path = '';
   @Input('altImg') alt = 'image';
   @Input('classes') class = '';
+  @Input('lazyLoading') lazy = true;
   
   
   // sources: Source[] = [];
