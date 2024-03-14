@@ -24,30 +24,30 @@ const routes: Routes = [
             (m) => m.PathNotFoundComponent
           ),
       },
-      {
-        path: RoutingRootPaths.contact,
-        pathMatch: 'full',
-        loadComponent: () =>
-          import('./pages/contact/contact.component').then(
-            (m) => m.ContactComponent
-          ),
-      },
-      {
-        path: RoutingRootPaths.projects,
-        pathMatch: 'full',
-        loadComponent: () =>
-          import('./pages/projects/projects.component').then(
-            (m) => m.ProjectsComponent
-          ),
-      },
-      {
-        path: RoutingRootPaths.services,
-        pathMatch: 'full',
-        loadComponent: () =>
-          import('./pages/services/services.component').then(
-            (m) => m.ServicesComponent
-          ),
-      },
+      // {
+      //   path: RoutingRootPaths.contact,
+      //   pathMatch: 'full',
+      //   loadComponent: () =>
+      //     import('./pages/contact/contact.component').then(
+      //       (m) => m.ContactComponent
+      //     ),
+      // },
+      // {
+      //   path: RoutingRootPaths.projects,
+      //   pathMatch: 'full',
+      //   loadComponent: () =>
+      //     import('./pages/projects/projects.component').then(
+      //       (m) => m.ProjectsComponent
+      //     ),
+      // },
+      // {
+      //   path: RoutingRootPaths.services,
+      //   pathMatch: 'full',
+      //   loadComponent: () =>
+      //     import('./pages/services/services.component').then(
+      //       (m) => m.ServicesComponent
+      //     ),
+      // },
       // {
       //   path: RoutingRootPaths.aboutUs,
       //   pathMatch: 'full',

@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:stats": "ng build --stats-json",
-    "analyze": "npm run build:stats && webpack-bundle-analyzer dist/deerhou/stats.json",
+    "analyze": "pnpm run build:stats && webpack-bundle-analyzer dist/deerhou/stats.json",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

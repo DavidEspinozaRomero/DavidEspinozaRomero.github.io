@@ -1,0 +1,24 @@
+<h2 class="mb-4 ps-1">
+  <i class="bi bi-briefcase-fill"></i> Experiencia Laboral
+</h2>
+
+<div class="exp-container ms-3 ps-4 pb-4" *ngFor="let exp of workExperience">
+  <!-- <div class="exp-logo"></div> -->
+
+  <h3 class="exp-title fs-5">{{ exp.title }}</h3>
+  <small class="exp-company ps-3"> {{ exp.company }} </small> |
+  <small class="exp-site"> {{ exp.site }}</small> |
+  <small class="exp-date"> {{ exp.date }}</small>
+  <p class="exp-description">
+    {{ exp.description }}
+  </p>
+  <ul class="exp-tasks-list">
+    <li *ngFor="let task of exp.tasksList">
+      <p class="text-white">
+        {{ task }}
+      </p>
+    </li>
+  </ul>
+
+  <!-- <small class="exp-stack">(Angular | TypeScript)</small> -->
+</div>

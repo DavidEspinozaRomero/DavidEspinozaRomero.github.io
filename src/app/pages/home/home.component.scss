@@ -1,22 +1,59 @@
-.bg-focused-work {
-  background-image: url("https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  // box-shadow: inset 0px 0px 1rem 0.5rem black;
-  // min-height: 90svw;
+#work-experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.bg-focused-work.lazy {
-  background-image: none;
-  background-color: #333;
+.exp {
+  max-width: 700px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 75%);
+}
+
+.available-to-work {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  // border: 3px solid crimson;
+  border-radius: 1rem;
+  box-shadow: inset 0px 0px 8px 0px crimson, 0px 0px 4px 0px crimson;
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: snow;
+  animation: shadowmovebtn 3s ease-out infinite;
+
+  &:hover {
+    font-weight: 400;
+    box-shadow: inset 0px 0px 8px 0px crimson, 4px 4px 8px 0px crimson;
+    scale: 1.1;
+    color: crimson;
+    animation: none;
+  }
 }
 
 .card-title {
   position: relative;
+  max-width: 600px;
 }
 
 .card-text {
   position: relative;
+}
+
+.icon {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-style: none;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: snow;
+  box-shadow: 1px 1px 4px 0px crimson;
 }
 
 .card-semi-glass {
@@ -117,4 +154,23 @@
   // 100% {
   //   box-shadow: 0px 0px 0rem 0 crimson;
   // }
+}
+
+// animation shadowmovebtn
+@keyframes shadowmovebtn {
+  0% {
+    box-shadow: inset 0px 0px 8px 0px crimson, 2px 0px 4px crimson;
+  }
+  25% {
+    box-shadow: inset 0px 0px 8px 0px crimson, 2px 2px 4px crimson;
+  }
+  50% {
+    box-shadow: inset 0px 0px 8px 0px crimson, -2px 2px 4px crimson;
+  }
+  75% {
+    box-shadow: inset 0px 0px 8px 0px crimson, -2px -2px 4px crimson;
+  }
+  100% {
+    box-shadow: inset 0px 0px 8px 0px crimson, 2px 0px 4px crimson;
+  }
 }

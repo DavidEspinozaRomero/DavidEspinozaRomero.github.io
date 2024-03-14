@@ -1,5 +1,7 @@
 # Deerhou
 
+[personal page](https://davidespinozaromero.github.io)
+
 This project is my personal portfolio
 
 - [Techstack](#techstack)

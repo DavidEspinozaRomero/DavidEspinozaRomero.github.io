@@ -1,0 +1,36 @@
+.exp-container {
+  position: relative;
+  border-left: 2px solid white;
+}
+
+.exp-title {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff8a00, crimson);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.exp-company {
+}
+
+.exp-tasks-list {
+  list-style: circle;
+  color: #ff8a00;
+}
+
+.exp-company::before {
+  content: "";
+
+  // add a dot
+  position: absolute;
+  top: 0.5rem;
+  left: -0.55rem;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: crimson;
+  box-shadow: 0 0 2px snow, inset 0 0 2px black;
+}

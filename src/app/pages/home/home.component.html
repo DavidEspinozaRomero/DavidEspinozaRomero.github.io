@@ -10,193 +10,67 @@
     >
     </app-img>
     <div
-      class="card-img-overlay bg-black opacity-75 d-flex justify-content-center align-items-center"
+      class="card-img-overlay d-flex justify-content-center align-items-center"
     >
-      <div class="text-center">
+      <div class="">
+        <div class="d-flex align-items-center mb-3">
+          <app-img
+            path="assets/photos/david_e.jpg"
+            altImg="david espinoza photo"
+            classes="card-photo rounded-circle"
+            [lazyLoading]="false"
+          >
+          </app-img>
+          <a
+            href="https://linkedin.com/in/david-emanuel-espinoza-romero-deerhou/"
+            class="available-to-work"
+            >Disponible para trabajar</a
+          >
+        </div>
         <h2 class="card-title">
-          <app-smoke-text paragraph="David Espinoza Romero"></app-smoke-text>
+          David Espinoza Romero
+          <!-- <app-smoke-text paragraph="David Espinoza Romero"></app-smoke-text> -->
         </h2>
         <p class="card-text">
-          <app-smoke-text paragraph="Frontend Developer"></app-smoke-text>
+          <strong>
+            <app-smoke-text
+              paragraph="3+ Frontend Developer | Es6+ | Typescript | Angular | Unit Testing | Node | Nest.js | SQL | Postgres"
+            ></app-smoke-text>
+          </strong>
         </p>
-      </div>
-    </div>
-  </section>
 
-  <section id="why-us" class="p-3 my-3 text-center">
-    <h3>
-      <app-smoke-text paragraph="Why Me?"></app-smoke-text>
-    </h3>
-    <p>
-      <app-smoke-text
-        paragraph="Your ingenious ideas. Our state-of-the-art"
-      ></app-smoke-text>
-      <br />
-      <app-smoke-text paragraph="web development"></app-smoke-text>
-    </p>
-  </section>
-
-  <section id="work-methods" class="mx-5 pb-4">
-    <div class="row row-cols-1 row-cols-lg-2">
-      <div class="col" *ngFor="let item of workMethods">
-        <div class="d-flex mb-5 p-3 card-semi-glass">
-          <i
-            class="fs-1 text-danger card-semi-glass__icon"
-            [class]="item.icon"
-          ></i>
-          <div class="ps-3">
-            <h2>{{ item.title }}</h2>
-            <span>
-              {{ item.description }}
-            </span>
-          </div>
+        <div class="pt-3">
+          <a href="mailto:deerhou@gmail.com" class="me-3 icon">
+            <i class="h5 bi bi-envelope" style="color: snow" aria-hidden="true">
+            </i>
+            <strong> Contáctame </strong>
+          </a>
+          <a
+            href="https://linkedin.com/in/david-emanuel-espinoza-romero-deerhou/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="me-3 icon"
+          >
+            <i class="h5 bi bi-linkedin" aria-hidden="true"> </i>
+            <strong> LinkedIn </strong>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="latest-projects" class="card border-0">
-    <app-img
-      path="https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      altImg="img phone tablet computer"
-      classes="card-img ar-4 vh-100"
-    >
-    </app-img>
-    <div
-      class="card-img-overlay bg-black opacity-75 d-flex justify-content-center align-items-center"
-    >
-      <div class="text-center">
-        <h2 class="card-title">
-          <app-smoke-text paragraph="Our Latest Projects"></app-smoke-text>
-        </h2>
-        <p class="card-text">
-          <app-smoke-text
-            paragraph="Today's marketing problems are complex, specialized and ever changing."
-          ></app-smoke-text>
-          <br />
-          <app-smoke-text
-            paragraph="Who can keep up with all the latest trends and technologies? Here I am."
-          ></app-smoke-text>
-        </p>
-      </div>
-    </div>
+  <section id="work-experience" class="mx-5 pb-4">
+    <app-work-experience
+      class="exp"
+      [workExperience]="workExperience"
+    ></app-work-experience>
   </section>
 
-  <section id="projects" class="">
+  <section id="projects" class="my-5">
     <app-cards-stack [cards]="cards"></app-cards-stack>
   </section>
 
-  <section id="projects-view" class="">
-    <app-bg-animated-interactive class=""> </app-bg-animated-interactive>
-    <div class="bg-animated-overlay">
-      <a routerLink="projects" class="btn btn-danger" type="button"
-        >View More</a
-      >
-    </div>
+  <section id="pitch" class="mx-5 pb-4">
+    <app-about-me></app-about-me>
   </section>
-
-  <section id="internet-marketing" class="p-3 text-center">
-    <h3>
-      <app-smoke-text paragraph="Work Expertice"></app-smoke-text>
-    </h3>
-    <p>
-      <app-smoke-text
-        paragraph="I work to create an exceptional user experience,"
-      ></app-smoke-text>
-      <br />
-      <app-smoke-text
-        paragraph="make sure that the site is compatible with different browsers and devices,"
-      ></app-smoke-text>
-      <br />
-      <app-smoke-text
-        paragraph="which means that your site will look good and behave effectively everywhere."
-      ></app-smoke-text>
-    </p>
-  </section>
-
-  <section id="focused-work" class="">
-    <div class="bg-focused-work">
-      <div class="bg-black opacity-75">
-        <p class="fs-2 p-3 text-center">
-          Industry Expertise + Laser-Focused =
-          <strong class="fs-1 text-danger">SUCCESS</strong>
-        </p>
-        <p class="fs-5 p-5 text-center">
-          <span class=""
-            >Do you want your website to have an impressive design and an
-            exceptional user experience? I'm an Angular Frontend developer
-            expert, in web design and user interface development.</span
-          >
-          <br />
-          <br />
-          <span
-            >Responsible for creating the face of your website, which includes
-            everything that visitors will see and experience when interacting
-            with your site. From page layout and structure to navigation and
-            usability.</span
-          >
-          <br />
-          <br />
-          <span>
-            You can be sure that your website will have an attractive design and
-            solid functionality. Also, optimize your site so that it loads
-            quickly and is optimized for search engines.</span
-          >
-        </p>
-        <p class="text-center fs-3 px-5 mb-0">
-          <strong
-            >Don't rely on a basic template to represent your business online.
-            <a
-              routerLink="contact"
-              class="btn btn-danger btn-animated-pulse"
-              role="button"
-            >
-              Hire me
-            </a>
-            to create an attractive, functional and effective website that will
-            make your brand stand out.</strong
-          >
-        </p>
-        <br />
-      </div>
-    </div>
-  </section>
-  <!-- <section id="path" class="card border-0">
-    <img
-      class="card-img ar-16 vh-90"
-      src="https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      alt="bg img computer"
-      loading="lazy"
-    />
-    <div
-      class="card-img-overlay bg-black opacity-75 d-flex justify-content-center align-items-center"
-    >
-      <div class="row justify-content-center">
-        <div
-          class="col-auto col-sm-3 text-center"
-          [ngClass]="{ 'd-flex': !xs }"
-          *ngFor="let item of path"
-        >
-          <p
-            class="fs-2 p-3 mx-auto bg-danger rounded"
-            [ngClass]="{ 'me-3': !xs }"
-            style="width: 3rem; height: 3rem; line-height: 1rem"
-          >
-            {{ item.number }}
-          </p>
-          <p class="fs-2" [ngClass]="{ 'me-3': !xs }">{{ item.title }}</p>
-          <p [ngClass]="{ 'text-start': !xs }">{{ item.description }}</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- <section id="projects-collage" class="p-3 text-center">
-    <img
-      class="card-img ar-4 vh-90"
-      src="https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      alt="bg img computer"
-      loading="lazy"
-    />
-  </section> -->
 </main>

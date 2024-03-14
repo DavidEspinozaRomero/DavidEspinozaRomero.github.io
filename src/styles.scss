@@ -1,5 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
-@import './scss/globals';
-@import './scss/utils';
-@import './scss/components/card-stack';
+@import "./scss/globals";
+@import "./scss/utils";
+@import "./scss/components/card-stack";
 
+// resets
+
+* {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // resets headings for text wrap
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}

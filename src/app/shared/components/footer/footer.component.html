@@ -1,5 +1,5 @@
 <footer class="p-3 text-bg-dark">
-  <div class="row ms-3 justify-content-between">
+  <!-- <div class="row ms-3 justify-content-between">
     <div class="col-6 col-md-2 mb-3">
       <h5 class="fs-4 ff-t">Productos</h5>
       <ul class="nav flex-column">
@@ -12,12 +12,12 @@
         <li class="nav-item mb-2">
           <a href="#" class="nav-link p-0 text-muted">Pricing</a>
         </li>
-        <!-- <li class="nav-item mb-2">
+        <li class="nav-item mb-2">
           <a href="#" class="nav-link p-0 text-muted">FAQs</a>
         </li>
         <li class="nav-item mb-2">
           <a href="#" class="nav-link p-0 text-muted">About</a>
-        </li> -->
+        </li>
       </ul>
     </div>
 
@@ -25,11 +25,21 @@
       <p class="h4">Send me a message</p>
       <app-contact-form> </app-contact-form>
     </div>
-  </div>
+  </div> -->
 
   <div class="row px-3 justify-content-between">
-    <div class="col-auto">© 2021 Deerhou, Inc. All rights reserved.</div>
+    <div class="col-auto">
+      © {{ today | date : "yyyy" }} Deerhou, Casi todos los derechos reservados.
+    </div>
     <div class="col-auto text-end">
+      <a href="mailto:deerhou@gmail.com" class="me-3">
+        <i
+          class="h3 bi bi-envelope-fill"
+          style="color: snow"
+          aria-hidden="true"
+        >
+        </i>
+      </a>
       <a
         href="https://wa.me/593939384904"
         target="_blank"

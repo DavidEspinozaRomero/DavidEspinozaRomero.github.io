@@ -1,0 +1,78 @@
+// bento grid
+
+.bento-grid-container {
+  // background-color: rgb(255, 255, 255, 0.2);
+  // border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-auto-rows: 12rem;
+  gap: 0.5rem;
+}
+
+.pitch {
+  margin-bottom: 0;
+  padding: 1rem;
+  // border: 1px solid crimson;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 crimson;
+  background-color: #17141d;
+  overflow-y: auto;
+  transition: scale 0.3s ease-in-out;
+
+  // los 2 primeros elementos
+  // &:nth-child(-n + 2) {
+  // }
+
+  // desde el 3er elemento hasta el final
+  &:nth-child(n + 2) {
+    // background-color: green;
+    // grid-column-start: span 2;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+
+  // los pares
+  &:nth-child(odd) {
+    grid-column-start: span 4;
+    grid-row-start: span 2;
+    animation: shadowmove 3s ease-in-out infinite alternate;
+  }
+  // los impares
+  &:nth-child(even) {
+    grid-column-start: span 4;
+    grid-row-start: span 1;
+    animation: shadowmove 5s ease-in-out infinite alternate;
+  }
+
+  &:nth-child(1) {
+    background: linear-gradient(90deg, #ff8a00, crimson);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    grid-column-start: span 12;
+    grid-row-start: span 1;
+  }
+
+  &:nth-child(7) {
+    grid-column-start: span 4;
+    grid-row-start: span 1;
+  }
+}
+
+// animation keyframes
+@keyframes shadowmove {
+  0% {
+    box-shadow: 2px 0px 4px crimson;
+  }
+  33% {
+    box-shadow: 2px 2px 4px crimson;
+  }
+  66% {
+    box-shadow: -2px 2px 4px crimson;
+  }
+  100% {
+    box-shadow: -2px -2px 4px crimson;
+  }
+}

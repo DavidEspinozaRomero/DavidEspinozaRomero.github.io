@@ -9,6 +9,8 @@ import {
   CardsStackComponent,
 } from 'src/app/components';
 import { ImgComponent } from 'src/app/components/img/img.component';
+import { WorkExperienceComponent } from 'src/app/components/work-experience/work-experience.component';
+import { AboutMeComponent } from 'src/app/components/about-me/about-me.component';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +21,9 @@ import { ImgComponent } from 'src/app/components/img/img.component';
     SmokeTextComponent,
     BgAnimatedInteractiveComponent,
     CardsStackComponent,
-    ImgComponent
+    ImgComponent,
+    WorkExperienceComponent,
+    AboutMeComponent,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
@@ -27,6 +31,32 @@ import { ImgComponent } from 'src/app/components/img/img.component';
 export class HomeComponent {
   //#region Variables
   cards: CardProperties[] = [
+    {
+      title: 'SpaceshipsMO (hobby)',
+      href: 'https://spacemo.netlify.app',
+      date: '03-2024 / present',
+      author: 'David Espinoza Romero',
+      prefix: 'Full Stack Game Developer',
+      photo: './../../../assets/photos/david_e.jpg',
+      badges: [
+        'Es6',
+        'Typescript',
+        'Rxjs',
+        'Angular',
+        'Node.js',
+        'Express',
+        'socket.io',
+      ],
+    },
+    {
+      title: 'Endless Runner Dog Game',
+      href: 'https://endlessrunnerdog.netlify.app',
+      date: '02-2024 / 03-2024',
+      author: 'David Espinoza Romero',
+      prefix: 'Game Developer',
+      photo: './../../../assets/photos/david_e.jpg',
+      badges: ['Es6', 'Typescript', 'Rxjs', 'Angular'],
+    },
     {
       title: 'IVI Educa',
       href: 'https://ivieduca.com',
@@ -73,13 +103,34 @@ export class HomeComponent {
       photo: '',
       badges: ['Es6', 'Bootstrap', 'Sass', 'Angular'],
     },
+  ];
+
+  workExperience = [
     {
-      title: 'title2',
-      date: 'text2',
-      author: 'David',
-      prefix: 'Programer',
-      photo: '',
-      badges: ['Angular'],
+      title: 'Full Stack',
+      company: 'Black Label Tech',
+      site: 'Ambato, Ec',
+      date: '2023 - 2024',
+      description:
+        'Soporte a software financiero de diferentes instituciones. (.Net Framework | Windows Forms | SQL | LINQ | MySQL | Microsoft Report Builder | SQL Server Reporting Services)',
+      tasksList: [
+        'Desarrollo y mantenimiento de funcionalidades en el sistema',
+        'Realizar reportes de estados financieros e informes.',
+        'Subir al servidor los reportes realizados',
+      ],
+    },
+    {
+      title: 'Frontend Developer',
+      company: 'Vinary Technology',
+      site: 'Ambato, Ec',
+      date: '2021 - 2022',
+      description:
+        'Creación de un SGA (Sistema de Gestión Administrativa) para instituciones educativas. (Angular | Bootstrap)',
+      tasksList: [
+        'Mejora en la seguridad de la aplicación implementando autorización/autenticación,  con guards y jwt.',
+        'El proyecto no tenía estructura, Mejora en la estructura del proyecto basado en módulos (Globales/Locales).',
+        'Refactorización de código (Módulos, Pipes, Directivas, Servicios, Componentes), para que sean reutilizables en todo el proyecto.',
+      ],
     },
   ];
 
@@ -107,9 +158,9 @@ export class HomeComponent {
   workMethods = [
     {
       icon: 'bi bi-calendar-check iconRotateY',
-      title: 'Experience',
+      title: 'Experiencia',
       description:
-        "I' ve been working in software development for years, and have gained extensive experience in a variety of programming languages and technologies. I have a solid knowledge in the development of web applications, mobile applications, database management systems, among others.",
+        'Desarrollador frontend +3, he trabajado en el desarrollo de software y he adquirido una amplia experiencia en una variedad de lenguajes y tecnologías de programación. Tengo un sólido conocimiento en desarrollo de aplicaciones web, con experiencia en Es6+, Typescript, Rxjs, Angular, Unit Testing, Node, Express, Nestjs, SQL, Postgres.',
     },
     {
       icon: 'bi bi-gear iconRotateY',
