@@ -32,6 +32,22 @@ export class HomeComponent {
   //#region Variables
   cards: CardProperties[] = [
     {
+      title: 'TravelToSpace',
+      href: 'https://travelto-space.netlify.app/',
+      date: '08-2024 / 10-2024',
+      author: 'David Espinoza Romero',
+      prefix: 'Frontend Developer',
+      photo: './../../../assets/photos/david_e.jpg',
+      badges: [
+        'Es6',
+        'Typescript',
+        'Astro',
+        'Static Site Generator',
+        'Scss',
+        'Desing Sistem',
+      ],
+    },
+    {
       title: 'SpaceshipsMO (hobby)',
       href: 'https://spacemo.netlify.app',
       date: '03-2024 / present',
