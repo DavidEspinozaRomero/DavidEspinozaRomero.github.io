@@ -1,46 +1,46 @@
-# Astro Starter Kit: Basics
+# DavidEspinozaRomero.github.io
 
-```sh
-npm create astro@latest -- --template basics
+Sitio personal construido con [Astro](https://astro.build/), desplegado automaticamente a `gh-pages` mediante GitHub Actions.
+
+## Requisitos
+
+- `fnm` instalado
+- Node.js `24.x` (el proyecto ya incluye `.node-version` con `24`)
+- npm
+
+## Desarrollo local
+
+```bash
+fnm use
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Despliegue a GitHub Pages (`gh-pages`)
 
-## 🚀 Project Structure
+Este repositorio incluye el workflow `/.github/workflows/deploy-gh-pages.yml`.
 
-Inside of your Astro project, you'll see the following folders and files:
+Flujo de despliegue:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+1. Haces push a la rama `main`.
+2. GitHub Actions ejecuta:
+   - `npm ci`
+   - `npm run build`
+3. El contenido de `dist/` se publica en la rama `gh-pages`.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Configuracion en GitHub
 
-## 🧞 Commands
+En el repositorio, verifica en **Settings > Pages**:
 
-All commands are run from the root of the project, from a terminal:
+- **Source**: `Deploy from a branch`
+- **Branch**: `gh-pages`
+- **Folder**: `/ (root)`
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Comandos utiles
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Comando | Descripcion |
+| :-- | :-- |
+| `fnm use` | Usa la version de Node definida en `.node-version` |
+| `npm run dev` | Levanta servidor local en `localhost:4321` |
+| `npm run build` | Genera build de produccion en `dist/` |
+| `npm run preview` | Previsualiza localmente la build |
