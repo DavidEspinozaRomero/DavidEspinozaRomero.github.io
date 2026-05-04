@@ -1,0 +1,147 @@
+---
+import davidPortrait from "../assets/david-portrait.png";
+
+import { Image } from "astro:assets";
+---
+
+<!-- About Me Section -->
+<section class="py-xl px-8 bg-surface-container-low" id="about">
+  <div class="mx-auto text-center flex flex-col gap-8 max-w-7xl">
+    <div
+      class="grid lg:grid-cols-2 gap-16 items-center text-left max-w-6xl mx-auto"
+    >
+      <!-- Image Column -->
+      <div class="relative group">
+        <div
+          class="absolute -inset-2 bg-secondary/20 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        >
+        </div>
+        <div
+          class="relative aspect-square overflow-hidden rounded-2xl border border-outline-variant shadow-2xl"
+        >
+          <Image
+            src={davidPortrait}
+            alt="David Espinoza Professional Portrait"
+            data-alt="A professional studio portrait of a software engineer in their late 20s. The lighting is dramatic and moody with a subtle blue rim light, creating a high-end technical look. The subject is wearing a dark, minimalist shirt. The background is a clean, dark slate grey. The overall image quality is sharp and high-resolution, conveying expertise and precision."
+            class="w-full h-full object-cover object-[100%_20%] grayscale hover:grayscale-0 transition-all duration-300"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-t from-background/60 via-transparent to-transparent"
+          >
+          </div>
+        </div>
+      </div>
+      <!-- Content Column -->
+      <div class="flex flex-col gap-8">
+        <div class="space-y-4">
+          <h2 class="font-h2 text-h2 text-white">Sobre Mí</h2>
+          <p class="text-body-lg text-on-surface-variant">
+            Soy un Desarrollador de software apasionado por la eficiencia. Me
+            enfoco en transformar requisitos complejos en interfaces intuitivas
+            y backends de alto rendimiento. Mi enfoque combina la precisión
+            técnica con una visión clara de los objetivos del producto.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div
+            class="p-4 bg-surface-variant/50 rounded-xl border border-outline-variant hover:border-secondary transition-colors"
+          >
+            <span
+              class="material-symbols-outlined text-secondary text-2xl mb-2"
+              data-icon="terminal">terminal</span
+            >
+            <h3 class="text-xl font-bold text-white mb-1">+3 Años</h3>
+            <p class="text-xs text-on-surface-variant">
+              Experiencia corporativa.
+            </p>
+          </div>
+          <div
+            class="p-4 bg-surface-variant/50 rounded-xl border border-outline-variant hover:border-secondary transition-colors"
+          >
+            <span
+              class="material-symbols-outlined text-secondary text-2xl mb-2"
+              data-icon="settings_ethernet">settings_ethernet</span
+            >
+            <h3 class="text-xl font-bold text-white mb-1">Real-world</h3>
+            <p class="text-xs text-on-surface-variant">
+              Sistemas en producción.
+            </p>
+          </div>
+          <div
+            class="p-4 bg-surface-variant/50 rounded-xl border border-outline-variant hover:border-secondary transition-colors"
+          >
+            <span
+              class="material-symbols-outlined text-secondary text-2xl mb-2"
+              data-icon="speed">speed</span
+            >
+            <h3 class="text-xl font-bold text-white mb-1">Performance</h3>
+            <p class="text-xs text-on-surface-variant">
+              Optimización constante.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="py-xl px-8 bg-surface-container-low" id="about">
+  <div class="max-w-4xl mx-auto flex flex-col gap-16">
+    <section class="flex flex-row gap-4">
+      <div class="w-1/3">
+        <Image
+          src={davidPortrait}
+          alt="David Espinoza"
+          class="w-full h-auto mx-auto rounded-t-2xl object-cover mask-b-from-30% mask-b-to-95%"
+        />
+      </div>
+      <div class="w-1/2 flex flex-col gap-4 justify-center">
+        <h2 class="font-h2 text-h2 text-white">Sobre Mí</h2>
+        <p class="text-body-lg text-on-surface-variant">
+          Soy un desarrollador de software apasionado por la eficiencia. Me
+          enfoco en transformar requisitos complejos en interfaces intuitivas y
+          backends de alto rendimiento. Mi enfoque combina la precisión técnica
+          con una visión clara de los objetivos del producto.
+        </p>
+      </div>
+    </section>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+      <div
+        class="p-6 bg-surface-variant rounded-xl border border-outline-variant hover:border-secondary transition-colors"
+      >
+        <span
+          class="material-symbols-outlined text-secondary text-4xl mb-4"
+          data-icon="terminal">terminal</span
+        >
+        <h3 class="text-h3 text-white mb-2">+3 Años</h3>
+        <p class="text-sm text-on-surface-variant">
+          Experiencia profesional en entornos corporativos.
+        </p>
+      </div>
+      <div
+        class="p-6 bg-surface-variant rounded-xl border border-outline-variant hover:border-secondary transition-colors"
+      >
+        <span
+          class="material-symbols-outlined text-secondary text-4xl mb-4"
+          data-icon="settings_ethernet">settings_ethernet</span
+        >
+        <h3 class="text-h3 text-white mb-2">Real-world</h3>
+        <p class="text-sm text-on-surface-variant">
+          Sistemas desplegados y operando en producción.
+        </p>
+      </div>
+      <div
+        class="p-6 bg-surface-variant rounded-xl border border-outline-variant hover:border-secondary transition-colors"
+      >
+        <span
+          class="material-symbols-outlined text-secondary text-4xl mb-4"
+          data-icon="speed">speed</span
+        >
+        <h3 class="text-h3 text-white mb-2">Performance</h3>
+        <p class="text-sm text-on-surface-variant">
+          Optimización constante de carga y respuesta.
+        </p>
+      </div>
+    </div>
+  </div>
+</section> -->
