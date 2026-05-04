@@ -209,7 +209,15 @@
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+}
+
+
 body {
   background-color: #101415;
   color: #e0e3e5;
 }
+
+
