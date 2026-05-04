@@ -1,0 +1,147 @@
+---
+import { Image } from "astro:assets";
+
+import blt from "../assets/blt_logo.webp";
+import ivi from "../assets/ivi_logo.jpg";
+import lily from "../assets/lily_logo.png";
+import vinary from "../assets/vinarytech_logo.jpg";
+---
+
+<section class="py-xl px-8 max-w-7xl mx-auto" id="testimonials">
+  <h2 class="font-h2 text-h2 text-white mb-12">Testimonios</h2>
+  <div class="grid md:grid-cols-2 gap-8">
+    <!-- Testimonial 0 -->
+    <div
+      class="bg-surface-container p-8 rounded-xl border border-outline-variant flex flex-col justify-between"
+    >
+      <div class="mb-6">
+        <span
+          class="material-symbols-outlined text-secondary text-4xl mb-4"
+          data-icon="format_quote">format_quote</span
+        >
+        <p class="text-on-surface-variant italic">
+          "El desarrollo era exactamente identico al diseño, que en ocaciones me
+          confundia uno con otro. Al inicio le faltaba experiencia, pero con el
+          tiempo mejoró y mejoró mucho. comprometido con su trabajo, puntual, es
+          un hombre recto."
+        </p>
+      </div>
+      <div class="flex items-center gap-4">
+        <div
+          class="w-12 h-12 rounded-full bg-surface-variant shrink-0 border border-outline-variant overflow-hidden"
+        >
+          <Image
+            alt="Fernando Castillo"
+            class="w-full h-full object-cover"
+            src={ivi}
+          />
+        </div>
+        <div>
+          <p class="text-white font-bold">Fernando Castillo</p>
+          <p class="text-xs text-on-surface-variant">CEO | IVI Educa</p>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial 1 -->
+    <div
+      class="bg-surface-container p-8 rounded-xl border border-outline-variant flex flex-col justify-between"
+    >
+      <div class="mb-6">
+        <span
+          class="material-symbols-outlined text-secondary text-4xl mb-4"
+          data-icon="format_quote">format_quote</span
+        >
+        <p class="text-on-surface-variant italic">
+          "Durante su tiempo trabajando conmigo, David demostró un alto nivel de
+          profesionalismo y compromiso con su trabajo. Siempre trabajó duro para
+          cumplir con los objetivos y expectativas de su rol siendo un miembro
+          valioso en el equipo."
+        </p>
+      </div>
+      <div class="flex items-center gap-4">
+        <div
+          class="w-12 h-12 rounded-full bg-surface-variant shrink-0 border border-outline-variant overflow-hidden"
+        >
+          <Image
+            alt="Jimmy Naranjo Coello"
+            class="w-full h-full object-cover"
+            src={vinary}
+          />
+        </div>
+        <div>
+          <p class="text-white font-bold">Jimmy Naranjo Coello</p>
+          <p class="text-xs text-on-surface-variant">
+            Jefe de Desarrollo | Vinary Tech
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial 2 -->
+    <div
+      class="bg-surface-container p-8 rounded-xl border border-outline-variant flex flex-col justify-between"
+    >
+      <div class="mb-6">
+        <span
+          class="material-symbols-outlined text-secondary text-4xl mb-4"
+          data-icon="format_quote">format_quote</span
+        >
+        <p class="text-on-surface-variant italic">
+          "El servicio fue muy bueno. Creo una página web que refleja lo que
+          buscaba, y aunque hubo algunos ajustes durante el proceso, siempre
+          mostró disposición para solucionarlos. En general, estoy satisfecha
+          con el resultado."
+        </p>
+      </div>
+      <div class="flex items-center gap-4">
+        <div
+          class="w-12 h-12 rounded-full bg-surface-variant shrink-0 border border-outline-variant overflow-hidden"
+        >
+          <Image
+            alt="Lilia Romero"
+            class="w-full h-full object-cover"
+            src={lily}
+          />
+        </div>
+        <div>
+          <p class="text-white font-bold">Lilia Romero</p>
+          <p class="text-xs text-on-surface-variant">
+            Cliente Independiente | Lily Modistería
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial 3 -->
+    <div
+      class="bg-surface-container p-8 rounded-xl border border-outline-variant flex flex-col justify-between"
+    >
+      <div class="mb-6">
+        <span
+          class="material-symbols-outlined text-secondary text-4xl mb-4"
+          data-icon="format_quote">format_quote</span
+        >
+        <p class="text-on-surface-variant italic">
+          "David ayudo en el mantenimiento y desarrollo de funcionalidades para
+          diferentes entidades financieras, demostrando un alto nivel de ética,
+          profesionalismo y compromiso por el trabajo."
+        </p>
+      </div>
+      <div class="flex items-center gap-4">
+        <div
+          class="w-12 h-12 rounded-full bg-surface-variant shrink-0 border border-outline-variant overflow-hidden"
+        >
+          <Image
+            alt="Hany Cordon"
+            class="w-full h-full object-cover"
+            src={blt}
+          />
+        </div>
+        <div>
+          <p class="text-white font-bold">Hany Cordon</p>
+          <p class="text-xs text-on-surface-variant">
+            Co-Founder | Black Label Tech
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
