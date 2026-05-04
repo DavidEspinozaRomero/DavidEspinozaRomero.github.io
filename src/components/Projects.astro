@@ -1,4 +1,6 @@
 ---
+import Carousel from "./Carousel.astro";
+
 const projectsInfo = [
   {
     tag: "EdTech & Management",
@@ -125,9 +127,9 @@ const projectsInfo = [
 
 <section class="py-xl px-8 max-w-7xl mx-auto" id="projects">
   <h2 class="font-h2 text-h2 text-white mb-12">Proyectos Destacados</h2>
-  <div class="grid md:grid-cols-2 gap-10">
+  <!-- <div class="grid md:grid-cols-2 gap-10"> -->
     <!-- Project Card 1 -->
-    <div
+    <!-- <div
       class="group bg-surface-container border border-outline-variant rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-secondary/5"
     >
       <div class="h-64 overflow-hidden">
@@ -161,9 +163,9 @@ const projectsInfo = [
           >
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Project Card 2 -->
-    <div
+    <!-- <div
       class="group bg-surface-container border border-outline-variant rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-secondary/5"
     >
       <div class="h-64 overflow-hidden">
@@ -197,6 +199,7 @@ const projectsInfo = [
           >
         </div>
       </div>
-    </div>
-  </div>
+    </div> -->
+  <!-- </div> -->
+  <Carousel />
 </section>
