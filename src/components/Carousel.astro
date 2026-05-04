@@ -1,0 +1,240 @@
+---
+const projectsInfo = [
+  {
+    tag: "EdTech & Management",
+    title: "IVI Educa",
+    description:
+      "Ecosistema digital inteligente diseñado para optimizar la gestión académica y administrativa, facilitando la comunicación en tiempo real entre instituciones, docentes y alumnos.",
+    link: "https://ivieduca.com",
+    photo: "ivi",
+    buttons: [
+      {
+        link: "https://github.com/VinaryTechnology/ivi-educat",
+        label: "Site",
+        icon: "code",
+        color: "secondary",
+      },
+      {
+        link: "https://github.com/VinaryTechnology/ivi-educat",
+        label: "Youtube",
+        icon: "code",
+        color: "secondary",
+      },
+    ],
+  },
+  {
+    tag: "Social Impact / Real Estate",
+    title: "Renacer: Vivienda Social",
+    description:
+      "Plataforma informativa para proyecto de vivienda de alto impacto social. facilita el acceso transparente a terrenos propios para familias de escasos recursos.",
+    photo: "",
+    buttons: [
+      {
+        link: "https://proyectoviviendarenacer.netlify.app/",
+        label: "Live Demo",
+        icon: "page",
+        color: "secondary",
+      },
+    ],
+  },
+  {
+    tag: "SpaceTech",
+    title: "TravelToSpace",
+    description:
+      "Simulador inmersivo de turismo orbital y exploración interplanetaria. Ofrece visualización de rutas astrodinámicas y experiencias interactivas para futuros viajeros del espacio.",
+    photo: "",
+    buttons: [
+      {
+        link: "https://travelto-space.netlify.app/",
+        label: "Launch",
+        icon: "code",
+        color: "secondary",
+      },
+      {
+        link: "https://github.com/DavidEspinozaRomero/renacer",
+        label: "Code",
+        icon: "code",
+        color: "secondary",
+      },
+    ],
+  },
+  {
+    tag: "Web Gaming / Canvas",
+    title: "Runner Dog Game",
+    description:
+      "Videojuego de navegador estilo endless runner optimizado para web. Cuenta con mecánicas de física fluida, sistema de puntaje dinámico y renderizado de alto rendimiento.",
+    link: "https://endlessrunnerdog.netlify.app",
+    photo: "",
+    buttons: [
+      {
+        link: "https://github.com/DavidEspinozaRomero/renacer",
+        label: "Code",
+        icon: "code",
+        color: "secondary",
+      },
+      {
+        link: "https://github.com/DavidEspinozaRomero/renacer",
+        label: "Demo",
+        icon: "code",
+        color: "secondary",
+      },
+    ],
+  },
+  {
+    tag: "Enterprice",
+    title: "DeerTechServices",
+    description:
+      "Empresa de Desarrollo de Software, Infraestructura y Tecnología de la Información, dedicada a la gestión de proyectos de desarrollo de software e infraestructura.",
+    link: "https://deertechservice.top/",
+    photo: "",
+    buttons: [
+      {
+        link: "https://proyectoviviendarenacer.netlify.app/",
+        label: "Site",
+        icon: "page",
+        color: "secondary",
+      },
+    ],
+  },
+  {
+    tag: "E-Commerce & Branding",
+    // tag: "E-Commerce & Showcase",
+    title: "Lilia's Bordados",
+    // description: "Catálogo digital y plataforma de exhibición para alta costura artesanal. Integra una interfaz visual elegante y optimizada para convertir visitantes en clientes mediante muestras interactivas.",
+    description:
+      "Showcase digital de alta gama para el sector textil artesanal. Una plataforma diseñada para convertir el arte tradicional del bordado en una experiencia visual premium y comercial.",
+    link: "https://liliasbordados.netlify.app",
+    photo: "",
+    buttons: [
+      {
+        link: "https://github.com/DavidEspinozaRomero/renacer",
+        label: "Code",
+        icon: "code",
+        color: "secondary",
+      },
+      {
+        link: "https://proyectoviviendarenacer.netlify.app/",
+        label: "Site",
+        icon: "page",
+        color: "secondary",
+      },
+    ],
+  },
+];
+---
+
+<ul class="carousel">
+  {
+    projectsInfo.map((project: any) => (
+      <li>
+        <div class="group bg-surface-container border border-outline-variant rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-secondary/5">
+          <div class="h-64 overflow-hidden">
+            <img
+              alt={project.title}
+              data-alt={project.description}
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS4aJ5s9ktCRBKLo9BZ6JW6Ux8nhTh8-0ii_HU2cx2S0MKLRyeRRlTlscEQEoX3N5iSC1T2xWORxywU1k2WWwQFtEAq_4yuzKQS9t__F2Ytv2xCgQIuBpypn9aWGfYt9jSZM0eVlW4MQU9HjXVMr_nAfEoF_LexmWkV39us2l_hkHmiuIUEC2Y6Lprabkf4vZpIfh_s4w-Zfhqdd3IlT8Dh6frqWaWazojj8AjoDgwYYAIt03vvA5KQ1XXopAUczHVWFLBG6XdjEY"
+            />
+          </div>
+          <div class="p-8">
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-secondary-container/10 text-secondary text-[10px] rounded uppercase font-bold tracking-widest">
+                {project.tag}
+              </span>
+            </div>
+            <h3 class="text-h3 text-white mb-3">{project.title}</h3>
+            <p class="text-on-surface-variant mb-6">{project.description}</p>
+            <div class="flex gap-4">
+              {project.buttons.map((button: any) => (
+                <button class="bg-secondary-container text-white px-5 py-2 rounded font-semibold text-sm transition-opacity hover:opacity-90">
+                  {button.label}
+                </button>
+              ))}
+              {/* <button class="border border-outline text-on-surface px-5 py-2 rounded font-semibold text-sm hover:border-secondary transition-all">
+                Code
+              </button> */}
+            </div>
+          </div>
+        </div>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  ul {
+    list-style: none;
+  }
+
+  .carousel {
+    /* margin: 5rem; */
+    padding: 1rem;
+    /* border: 5px solid green; */
+
+    display: grid;
+    gap: 2rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 50%;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    @media (prefers-reduced-motion: no-preference) {
+      scroll-behavior: smooth;
+    }
+
+    anchor-name: --carousel;
+
+    scroll-marker-group: after;
+
+    &::scroll-marker-group {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      /* color-scheme: dark; */
+      padding: 1rem;
+    }
+
+    > li {
+      scroll-snap-align: center;
+
+      &::scroll-marker {
+        content: " ";
+        width: 1rem;
+        height: 1rem;
+        aspect-ratio: 1 / 1;
+        border-radius: 100%;
+        border: 1px solid snow;
+      }
+
+      &::scroll-marker:target-current {
+        background: LinkText;
+      }
+    }
+
+    &::scroll-button(*) {
+      position: fixed;
+      position-anchor: --carousel;
+      /* margin: 1rem; */
+      aspect-ratio: 1;
+      /* font-size: 1rem; */
+      /* font: inherit; */
+      /* background: dodgerblue; */
+      background: transparent;
+      color-scheme: dark;
+      /* border: 0; */
+      border-radius: 100%;
+      /* font-weight: 700; */
+    }
+
+    &::scroll-button(right) {
+      content: "⮕" / "Scroll Right";
+      position-area: center right;
+    }
+
+    &::scroll-button(left) {
+      content: "⬅" / "Scroll Left";
+      position-area: center left;
+    }
+  }
+</style>
