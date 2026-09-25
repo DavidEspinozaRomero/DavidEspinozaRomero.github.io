@@ -1,3 +1,4 @@
+import jornadaGo from "../projects/jornadaGo.png";
 import iviHero from "../projects/iviHero.png";
 import renacerHero from "../projects/renacerHero.png";
 import travelToSpaceHero from "../projects/travelToSpaceHero.png";
@@ -6,6 +7,21 @@ import deerTechServicesHero from "../projects/deerTechServicesHero.png";
 import liliasBordadosHero from "../projects/liliasBordadosHero.png";
 
 export const projectsInfo = [
+  {
+    tag: "Management",
+    title: "JornadaGo",
+    description:
+      "Fichaje laboral con geolocalización, te muestra en tiempo real cuándo y desde dónde fichan tus empleados, planificá qué empresa les toca cada día y centralizá incidencias y eventos laborales",
+    photo: jornadaGo,
+    buttons: [
+      {
+        link: "https://jornadago.netlify.app/",
+        label: "Site",
+        icon: "code",
+        color: "blue",
+      },
+    ],
+  },
   {
     tag: "EdTech & Management",
     title: "IVI Educa",
